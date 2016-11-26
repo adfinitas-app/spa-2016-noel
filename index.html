@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adfinitas - SPA</title>
+
+    
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+    
+
+    <script>
+      var prixRef = 55;
+
+      var prix01 = 55;
+      var prix02 = 70;
+      var prix03 = 110;
+
+      function recupPrixRef(varUp){
+        if(typeof varUp === 'undefined' || varUp == 0){
+          console.log('undefined ou 0 : varUp : '+varUp);
+          prix01 = 55;
+          prix02 = 70;
+          prix03 = 110;
+        }else if(typeof varUp === 'number'){
+            prixRef = varUp;
+            console.log('Number : varUp : '+varUp);
+            prix01 = prixRef*1;
+            prix02 = prixRef*1.5;
+            prix03 = prixRef*2;
+        }else{
+          console.log('varUp : '+varUp);
+          console.log('erreur de paramètre');
+          prix01 = 55;
+          prix02 = 70;
+          prix03 = 110;
+        }
+      }
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-24080065-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 985070117;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+      </script>
+      <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+      <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/985070117/?guid=ON&amp;script=0"/>
+      </div>
+    </noscript>
+
+    
+
+    
+
+  </head>
+  <body>
+
+    
+
+    <div id="contentLoader">
+      <div class="logo">
+        <img src="images/logo.svg"/>
+      </div>
+      <div id="contIMGLoad">
+        <div id="contTitreLoader">
+          <img src='images/topLoader.png'>
+        </div>
+        <img id="contTitreBaseLoad" src='images/fondLoader.png'>
+      </div>
+    </div>
+    
+    <div id="contentMenu">
+      <div class="logo">
+        <img src="images/logo.svg"/>
+      </div>
+      <div id="contTitre">
+        <h1>ce que je veux pour noËl ?</h1>
+        <div id="separTitre"></div>
+        <h2>Découvrez les listes de Noël de nos animaux, réalisez-leurs voeux et partagez leur bonheur.</h2>
+      </div>
+      <ul>
+        <li class="listMenu" id="menuLapin">
+          <div class="contListMenu">
+            <span>Découvrez la liste de</span>
+            <div class="ctaMenu">
+              <span>Chouchou</span>
+            </div>
+          </div>
+        </li>
+        <li class="listMenu" id="menuChien">
+          <div class="contListMenu">
+            <span>Découvrez la liste de</span>
+            <div class="ctaMenu">
+              <span>Happy</span>
+            </div>
+          </div>
+        </li>
+        <li class="listMenu" id="menuChat">
+          <div class="contListMenu">
+            <span>Découvrez la liste de</span>
+            <div class="ctaMenu">
+              <span>Atlas</span>
+            </div>
+          </div>
+        </li>
+        <li class="listMenu" id="menuCheval">
+          <div class="contListMenu">
+            <span>Découvrez la liste de</span>
+            <div class="ctaMenu">
+              <span>Willow</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+    </div>
+
+    <div id="content">
+      <div class="logo">
+        <img src="images/logo.svg"/>
+      </div>
+      <div id="menu">
+        <ul id="menuList">
+          <li class="itemList" id="listCheval">
+            <div class="namePet">
+              <span>Willow</span>
+            </div>
+          </li>
+          <li class="itemList" id="listLapin">
+            <div class="namePet">
+              <span>Chouchou</span>
+            </div>
+          </li>
+          <li class="itemList" id="listChat">
+            <div class="namePet">
+              <span>Atlas</span>
+            </div>
+          </li>
+          <li class="itemList current" id="listChien">
+            <div class="namePet">
+              <span>Happy</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="container">
+        
+        <video id="bgvid" playsinline autoplay muted>
+          <source id="sourceMP4" src="videos/CHIEN_HD_00.mp4" type="video/mp4">
+          <source id="sourceWEBM" src="videos/CHIEN_HD_00.webm" type="video/webm">
+        </video>
+        <div id="contDrawPlus">
+          <img id="etapeAll" src="images/etapeAll.png">
+          <img id="etape01" src="images/etape01.png">
+          <img id="etape02" src="images/etape02.png">
+          <img id="etape03" src="images/etape03.png">
+        </div>
+        <div id="contFettis"></div>
+        <div id="titre">
+          <span>ce que je veux pour noËl ?</span>
+        </div>
+        <div id="blockListe">
+          <div id="btnListe">
+            <div id="pictoListe">
+              <img src="images/pictoWichlist.svg"/>
+            </div>
+            <div id="wordListe">
+              <span>
+                Voir sa liste de Noël
+              </span>
+            </div>
+          </div>
+          <div class="contListe">
+            <div id="titreListe">
+              <span>Liste de Noël de Milou</span>
+            </div>
+            <img src="images/listeMilou.png"/>
+          </div>
+        </div>
+
+        <div id="contBouton">
+          <div id="titreBouton">
+            <span>
+              Offrez aux animaux des refuges</br>
+              les cadeaux dont ils rêvent
+            </span>
+          </div>
+          <div id="innerBouton">
+            <ul id="boutonList">
+              <li class="itemBTN" id="firstPrice">
+                <div class="sup">
+                  <span>
+                    <span id="adFlabel-don-1" class="noStyle">55</span><sup>&#x20AC;</sup>
+                  </span>
+                </div>
+                <div class="bot">
+                </div>
+              </li>
+              <li class="itemBTN" id="secondPrice">
+                <div class="sup">
+                  <span>
+                    <span id="adFlabel-don-2" class="noStyle">70</span><sup>&#x20AC;</sup>
+                  </span>
+                </div>
+                <div class="bot">
+                </div>
+              </li>
+              <li class="itemBTN" id="thirdPrice">
+                <div class="sup">
+                  <span>
+                    <span id="adFlabel-don-3" class="noStyle">110</span><sup>&#x20AC;</sup>
+                  </span>
+                </div>
+                <div class="bot">
+                </div>
+              </li>
+              <li class="itemBTN" id="otherPrice">
+                <div class="sup">
+                  <span id="titreForm">
+                    montant</br>libre
+                  </span>
+                  <span id="form">
+                    <input id="montant" placeholder="0"\><span class="euro">€</span>
+                  </span>
+                </div>
+                <div class="bot">
+                </div>
+              </li>
+              <div class="clear"></div>
+            </ul>
+          </div>
+          <div id="contCTA">
+            <div id="cta">
+              <span>Je fais un don</span>
+            </div> 
+          </div>
+        </div>
+
+        <div id="contFooter">
+          <div id="logoConfiance">
+            <a href="http://www.la-spa.fr/actualites/spa/la-rigueur-et-la-transparence-de-gestion-de-la-spa-labellisees-par-le-comite-de-la-charte" target="_blank">
+              <img src="images/logoConfiance.jpg">
+            </a>
+            <span>
+              <a href="http://la-spa.fr/contact" target="_blank">
+                contact
+              </a>
+              &nbsp;-&nbsp;
+              <a href="http://la-spa.fr/mentions-legales" target="_blank">
+                Mention légales
+              </a>
+              &nbsp;-&nbsp;
+              <a href="http://www.la-spa.fr/actualites/spa/ce-quils-veulent-pour-noel-une-famille-responsable" target="_blank">
+                LE NOËL DES ANIMAUX
+              </a>
+            </span>
+          </div>
+
+          <div id="logoFacebook">
+            <a href="https://www.facebook.com/SPAofficiel/" target="_blank">
+              <span>PARTAGER</span>
+              <img src="images/logoFacebook.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="js/script.js"></script>
+
+    <script src="js/jquery.html5Loader.js"></script>
+
+    <script>
+      function extractUrlParams(){    
+        var t = document.location.search.substring(1).split('&'); var f = [];
+        for (var i=0; i<t.length; i++){
+          var x = t[ i ].split('=');
+          f[x[0]]=decodeURIComponent(x[1]);
+        }
+        return f;
+      };
+
+      (function(){
+        var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+      })("woopra");
+
+      woopra.config({
+        domain: 'spa.asso.fr',
+        cookie_domain: 'spa.asso.fr'
+      });
+
+      // Function located in assets/js/app.js
+      var p = extractUrlParams();
+      if ('email' in p) {
+        if ('lastname' in p && 'firstname' in p) {
+          woopra.identify({
+            email: p['email'],
+            name: p['firstname'] + ' ' + p['lastname']
+          });
+        } else {woopra.identify({email: p['email']})}
+      }
+      woopra.track('pv', {'url':document.location.pathname, 'title': document.title, 'reserved_code_media': p['reserved_code_media']});
+    </script>
+
+    <script>
+      $.urlParam = function(name){
+        if(new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href) == null){
+          return 0;
+        }else{
+          var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+          return results[1] || 0;
+        }
+        
+        
+      }
+
+      var paramEmail = "";
+      var paramFirstname = "";
+      var paramLastname = "";
+
+      if($.urlParam('email') != 0){
+        paramEmail = $.urlParam('email');
+      }
+
+      if($.urlParam('firstname') != 0){
+        paramFirstname = $.urlParam('firstname');
+      }
+
+      if($.urlParam('lastname') != 0){
+        paramLastname = $.urlParam('lastname');
+      }
+
+      var reserved_code_media = $.urlParam('reserved_code_media');
+      if(reserved_code_media == null || reserved_code_media == ""){
+        reserved_code_media = "W16PI16";
+      }
+
+      console.log("$.urlParam('email') : "+$.urlParam('email'));
+      console.log("$.urlParam('firstname') : "+$.urlParam('firstname'));
+      console.log("$.urlParam('lastname') : "+$.urlParam('lastname'));
+      console.log("$.urlParam('reserved_code_media') : "+$.urlParam('reserved_code_media'));
+
+    </script>
+  </body>
+</html>

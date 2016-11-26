@@ -1,0 +1,27 @@
+/* ==========================================================================
+CSS Queries 
+========================================================================== */
+
+@media screen and (max-height:400px) {
+    #titre_pre_home,#titre_pre_home_load { height: 7% }
+    .btns_home { width: 15vw; height: 15vw; }
+    #logo_spa, #logo_spa_home { width: 14%; }
+    #titre_home { font-size: 8vw; }
+    #texte_home { font-size: 3vw; }
+    #header_title_home { left: 25%; font-size: 6.5vw; }
+    #header_title { left: 22%; font-size: 6.5vw; }
+    #liste_picto { width: 8%;}
+    #liste_title { width: 41%; }
+    #liste_img { width: 76%; }
+    #liste_title_img { font-size: 6vw; top: 14%; }
+    #liste_close_img { right: 20%; }
+    #dons_content { height: 70%; }
+    #boutonList li .sup { position: absolute; z-index: 1; }
+    #boutonList li#otherPrice .sup span {top: 53%; left: -41%; }
+    #boutonList li .sup span { top: 52%; left: 1%; }
+    #vid_0_lapin,#vid_1_lapin,#vid_2_lapin,#vid_3_lapin {bottom: -35% !important;}
+    #vid_0_chien,#vid_1_chien,#vid_2_chien,#vid_3_chien {bottom: -30% !important;}
+    #vid_0_chat,#vid_1_chat,#vid_2_chat,#vid_3_chat {bottom: -35% !important;}
+    #vid_0_cheval,#vid_1_cheval,#vid_2_cheval,#vid_3_cheval {bottom: -18% !important;}
+}
+
