@@ -93,6 +93,78 @@
   {
     "type": "VIDEO",
     "sources": {
+      "webm": {
+        "source": "videos/CHIEN_HD_02.webm",
+        "size": 1749381
+      }
+    }
+  },
+  {
+    "type": "VIDEO",
+    "sources": {
+      "webm": {
+        "source": "videos/CHIEN_HD_03.webm",
+        "size": 1553836
+      }
+    }
+  },
+  {
+    "type": "VIDEO",
+    "sources": {
+      "webm": {
+        "source": "videos/CHAT_HD_Dsk_02.webm",
+        "size": 336172
+      }
+    }
+  },
+  {
+    "type": "VIDEO",
+    "sources": {
+      "webm": {
+        "source": "videos/CHAT_HD_Dsk_03.webm",
+        "size": 725708
+      }
+    }
+  },
+  {
+    "type": "VIDEO",
+    "sources": {
+      "webm": {
+        "source": "videos/CHEVAL_HD_Dsk_02.webm",
+        "size": 554331
+      }
+    }
+  },
+  {
+    "type": "VIDEO",
+    "sources": {
+      "webm": {
+        "source": "videos/CHEVAL_HD_Dsk_03.webm",
+        "size": 447255
+      }
+    }
+  },
+  {
+    "type": "VIDEO",
+    "sources": {
+      "webm": {
+        "source": "videos/LAPIN_HD_Dsk_02.webm",
+        "size": 174966
+      }
+    }
+  },
+  {
+    "type": "VIDEO",
+    "sources": {
+      "webm": {
+        "source": "videos/LAPIN_HD_Dsk_03.webm",
+        "size": 182798
+      }
+    }
+  },
+  {
+    "type": "VIDEO",
+    "sources": {
       "h264": {
         "source": "videos/CHIEN_HD_00.mp4",
         "size": 19448241
@@ -158,79 +230,6 @@
       "h264": {
         "source": "videos/LAPIN_HD_Dsk_01.mp4",
         "size": 545867
-      }
-    }
-  },
-  {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHIEN_HD_02.webm",
-        "size": 1749381
-      }
-    }
-  },
-  {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHIEN_HD_03.webm",
-        "size": 1553836
-      }
-    }
-  },
-  {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHAT_HD_Dsk_02.webm",
-        "size": 336172
-      }
-    }
-  },
-  {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHAT_HD_Dsk_03.webm",
-        "size": 725708
-      }
-    }
-  },
-  {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHEVAL_HD_Dsk_02.webm",
-        "size": 554331
-      }
-    }
-  },
-  {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHEVAL_HD_Dsk_03.webm",
-        "size": 447255
-      }
-    }
-  },
-
-  {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/LAPIN_HD_Dsk_02.webm",
-        "size": 174966
-      }
-    }
-  },
-  {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/LAPIN_HD_Dsk_03.webm",
-        "size": 182798
       }
     }
   },
@@ -305,7 +304,7 @@
         "size": 674685
       }
     }
-  }, 
+  },
   {
     "source": "images/listeMilou.png",
     "type": "IMAGE",
