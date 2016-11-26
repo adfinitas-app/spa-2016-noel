@@ -312,7 +312,7 @@ function setClickMenu(){
 
     $('#clickTest').on('click',function(){
         // $('#sourceMP4').attr("src", v[3][1][0]);
-        $('#sourceMP4').attr("src", v[3][4]);
+      //  $('#sourceMP4').attr("src", v[3][4]);
         // $('#sourceWEBM').attr("src", v[3][1][1]);
         $('#sourceWEBM').attr("src", '');
         video.load();
@@ -405,25 +405,25 @@ $('.itemBTN').on('click',function(){
         $('#contFettis').html("");
 
         if(currentPet == "chat"){
-            $('#sourceMP4').attr("src", v[0][1][0]);
+        //    $('#sourceMP4').attr("src", v[0][1][0]);
             $('#sourceWEBM').attr("src", v[0][1][1]);
             video.load();
         }
 
         if(currentPet == "chien"){
-            $('#sourceMP4').attr("src", v[1][1][0]);
+          //  $('#sourceMP4').attr("src", v[1][1][0]);
             // $('#sourceWEBM').attr("src", v[1][1][1]);
             video.load();
         }
 
         if(currentPet == "cheval"){
-            $('#sourceMP4').attr("src", v[2][1][0]);
+        //    $('#sourceMP4').attr("src", v[2][1][0]);
             $('#sourceWEBM').attr("src", v[2][1][1]);
             video.load();
         }
 
         if(currentPet == "lapin"){
-            $('#sourceMP4').attr("src", v[3][1][0]);
+        //    $('#sourceMP4').attr("src", v[3][1][0]);
             $('#sourceWEBM').attr("src", v[3][1][1]);
             video.load();
         }
@@ -453,7 +453,7 @@ $('.itemBTN').on('click',function(){
         if(currentPet == "chien"){
             // video.removeAttribute("loop");
             // document.getElementById('bgvid').addEventListener('ended',noLoopChien);
-            $('#sourceMP4').attr("src", v[1][2][0]);
+        //    $('#sourceMP4').attr("src", v[1][2][0]);
             $('#sourceWEBM').attr("src", v[1][2][1]);
             video.load();
         }
@@ -465,7 +465,7 @@ $('.itemBTN').on('click',function(){
         }
 
         if(currentPet == "lapin"){
-            $('#sourceMP4').attr("src", v[3][2][0]);
+        //    $('#sourceMP4').attr("src", v[3][2][0]);
             $('#sourceWEBM').attr("src", v[3][2][1]);
             video.load();
         }
@@ -486,26 +486,26 @@ $('.itemBTN').on('click',function(){
         $('#etape03').animate({opacity:1},800);
 
         if(currentPet == "chat"){
-            $('#sourceMP4').attr("src", v[0][3][0]);
+        //    $('#sourceMP4').attr("src", v[0][3][0]);
             $('#sourceWEBM').attr("src", v[0][3][1]);
             video.load();
         }
 
         if(currentPet == "chien"){
             video.removeAttribute("loop");
-            $('#sourceMP4').attr("src", v[1][3][0]);
+        //    $('#sourceMP4').attr("src", v[1][3][0]);
             $('#sourceWEBM').attr("src", v[1][3][1]);
             video.load();
         }
 
         if(currentPet == "cheval"){
-            $('#sourceMP4').attr("src", v[2][3][0]);
+        //    $('#sourceMP4').attr("src", v[2][3][0]);
             $('#sourceWEBM').attr("src", v[2][3][1]);
             video.load();
         }
 
         if(currentPet == "lapin"){
-            $('#sourceMP4').attr("src", v[3][3][0]);
+        //    $('#sourceMP4').attr("src", v[3][3][0]);
             $('#sourceWEBM').attr("src", v[3][3][1]);
             video.load();
         }
@@ -585,7 +585,7 @@ function noLoopChien(){
     document.getElementById('bgvid').removeEventListener('ended',noLoopChien);
 
 
-    $('#sourceMP4').attr("src", v[1][2][2]);
+  //  $('#sourceMP4').attr("src", v[1][2][2]);
     $('#sourceWEBM').attr("src", v[1][2][3]);
     video.load();
     video.setAttribute("loop", true);
@@ -598,7 +598,7 @@ function updatePet(){
             // video.setAttribute("poster", "images/posterChat.jpg");
             // $('#bgvid').css({"background":"url('images/posterChat.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
-            $('#sourceMP4').attr("src", v[0][0][0]);
+    /        $('#sourceMP4').attr("src", v[0][0][0]);
             $('#sourceWEBM').attr("src", v[0][0][1]);
 
             video.load();
@@ -609,7 +609,7 @@ function updatePet(){
             // video.setAttribute("poster", "images/posterChien.jpg");
             // $('#bgvid').css({"background":"url('images/posterChien.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
-            $('#sourceMP4').attr("src", v[1][0][0]);
+      //      $('#sourceMP4').attr("src", v[1][0][0]);
             $('#sourceWEBM').attr("src", v[1][0][1]);
 
             video.load();
@@ -620,7 +620,7 @@ function updatePet(){
             // video.setAttribute("poster", "images/posterCheval.jpg");
             // $('#bgvid').css({"background":"url('images/posterCheval.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
-            $('#sourceMP4').attr("src", v[2][0][0]);
+      //      $('#sourceMP4').attr("src", v[2][0][0]);
             $('#sourceWEBM').attr("src", v[2][0][1]);
 
             video.load();
@@ -631,7 +631,7 @@ function updatePet(){
             // video.setAttribute("poster", "images/posterLapin.jpg");
             // $('#bgvid').css({"background":"url('images/posterLapin.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
-            $('#sourceMP4').attr("src", v[3][0][0]);
+      //      $('#sourceMP4').attr("src", v[3][0][0]);
             $('#sourceWEBM').attr("src", v[3][0][1]);
 
             video.load();
@@ -647,25 +647,25 @@ function firstNoLoop(){
 
     if(currentPet == "chat"){
         video.setAttribute("loop", true);
-        $('#sourceMP4').attr("src", v[0][1][0]);
+    //    $('#sourceMP4').attr("src", v[0][1][0]);
         $('#sourceWEBM').attr("src", v[0][1][1]);
         video.load();
     }
     if(currentPet == "chien"){
         video.setAttribute("loop", true);
-        $('#sourceMP4').attr("src", v[1][1][0]);
+    //    $('#sourceMP4').attr("src", v[1][1][0]);
         $('#sourceWEBM').attr("src", v[1][1][1]);
         video.load();
     }
     if(currentPet == "cheval"){
         video.setAttribute("loop", true);
-        $('#sourceMP4').attr("src", v[2][1][0]);
+    //    $('#sourceMP4').attr("src", v[2][1][0]);
         $('#sourceWEBM').attr("src", v[2][1][1]);
         video.load();
     }
     if(currentPet == "lapin"){
         video.setAttribute("loop", true);
-        $('#sourceMP4').attr("src", v[3][1][0]);
+    //    $('#sourceMP4').attr("src", v[3][1][0]);
         $('#sourceWEBM').attr("src", v[3][1][1]);
         video.load();
     }
