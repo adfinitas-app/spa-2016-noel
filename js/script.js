@@ -598,7 +598,7 @@ function updatePet(){
             // video.setAttribute("poster", "images/posterChat.jpg");
             // $('#bgvid').css({"background":"url('images/posterChat.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
-    /        $('#sourceMP4').attr("src", v[0][0][0]);
+    //        $('#sourceMP4').attr("src", v[0][0][0]);
             $('#sourceWEBM').attr("src", v[0][0][1]);
 
             video.load();
