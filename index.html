@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adfinitas - SPA</title>
 
-    
+
 
     <link href="css/style.css" rel="stylesheet">
 
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
-    
+
 
     <script>
       var prixRef = 55;
@@ -71,14 +71,14 @@
       </div>
     </noscript>
 
-    
 
-    
+
+
 
   </head>
   <body>
 
-    
+
 
     <div id="contentLoader">
       <div class="logo">
@@ -91,7 +91,7 @@
         <img id="contTitreBaseLoad" src='images/fondLoader.png'>
       </div>
     </div>
-    
+
     <div id="contentMenu">
       <div class="logo">
         <img src="images/logo.svg"/>
@@ -135,7 +135,7 @@
           </div>
         </li>
       </ul>
-      
+
     </div>
 
     <div id="content">
@@ -167,10 +167,10 @@
         </ul>
       </div>
       <div id="container">
-        
+
         <video id="bgvid" playsinline autoplay muted>
-          <source id="sourceMP4" src="videos/CHIEN_HD_00.mp4" type="video/mp4">
           <source id="sourceWEBM" src="videos/CHIEN_HD_00.webm" type="video/webm">
+          <!--<source id="sourceMP4" src="videos/CHIEN_HD_00.mp4" type="video/mp4">-->
         </video>
         <div id="contDrawPlus">
           <img id="etapeAll" src="images/etapeAll.png">
@@ -255,7 +255,7 @@
           <div id="contCTA">
             <div id="cta">
               <span>Je fais un don</span>
-            </div> 
+            </div>
           </div>
         </div>
 
@@ -289,14 +289,14 @@
       </div>
     </div>
 
-    
+
 
     <script src="js/script.js"></script>
 
     <script src="js/jquery.html5Loader.js"></script>
 
     <script>
-      function extractUrlParams(){    
+      function extractUrlParams(){
         var t = document.location.search.substring(1).split('&'); var f = [];
         for (var i=0; i<t.length; i++){
           var x = t[ i ].split('=');
@@ -335,8 +335,8 @@
           var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
           return results[1] || 0;
         }
-        
-        
+
+
       }
 
       var paramEmail = "";
