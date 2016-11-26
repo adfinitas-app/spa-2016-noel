@@ -13,20 +13,20 @@ v[3] = new Array();
 //Video Chat
 v[0][0] = [
         "videos/CHAT_HD_Dsk_00.mp4",
-        "videos/CHAT_HD_Dsk_00.webm"        
+        "videos/CHAT_HD_Dsk_00.webm"
         ];
 v[0][1] = [
         "videos/CHAT_HD_Dsk_01.mp4",
-        "videos/CHAT_HD_Dsk_01.webm"        
+        "videos/CHAT_HD_Dsk_01.webm"
         ];
 v[0][2] = [
         "videos/CHAT_HD_Dsk_02.mp4",
-        "videos/CHAT_HD_Dsk_02.webm"        
+        "videos/CHAT_HD_Dsk_02.webm"
         ];
 v[0][3] = [
         "videos/CHAT_HD_Dsk_03.mp4",
-        "videos/CHAT_HD_Dsk_03.webm"        
-        ];             
+        "videos/CHAT_HD_Dsk_03.webm"
+        ];
 //Video Chien
 v[1][0] = [
         "videos/CHIEN_HD_00.mp4",
@@ -104,7 +104,7 @@ $( document ).ready(function() {
     $.html5Loader({
         filesToLoad:    'js/files.json', // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
-            
+
         },
         onComplete:         function () {
             setTimeout(function(){
@@ -202,7 +202,7 @@ function animationConfettis(){
         // var chute3 = CHUTE[~~range(0, 2)];
 
         // $('#contFettis').append('<div class="'+chute3+'"><div class="confettis '+animRot3+'" style="width:'+widthC3+'px;height:'+widthC3+'px; left:'+leftC3+'px; top:'+topC3+'px; background-color:rgb('+color3[0]+','+color3[1]+','+color3[2]+'); transform-origin:'+centreT3+'% '+centreL3+'%;-webkit-transform-origin:'+centreT3+'% '+centreL3+'%;"></div></div>');
-        
+
         o = o+1;
         // console.log(o);
         if(o>(numberConf)){
@@ -220,22 +220,22 @@ function animationConfettis(){
         });
     },8000);
 
-    
+
     // var time = Date.now();
     // var b = window.innerHeight;
     // console.log('time : '+time);
-    
+
 
     // var intervalLog = setInterval(function(){
     //     // console.log('intervalLog');
-        
+
     //     timing = timing + 1;
     //     // console.log('x : '+x);
     //     var y = (a*(timing*timing))/100;
     //     console.log('y : '+y);
 
     //     $('.confettis').css({top:y, left:timing});
-        
+
     //     if(y>widthScreen){
     //         clearInterval(intervalLog);
     //     }
@@ -307,7 +307,7 @@ function setClickMenu(){
         $('#adFlabel-don-2').html(prix02);
         $('#adFlabel-don-3').html(prix03);
         // console.log('currentPet : '+currentPet);
-        
+
     });
 
     $('#clickTest').on('click',function(){
@@ -317,7 +317,7 @@ function setClickMenu(){
         $('#sourceWEBM').attr("src", '');
         video.load();
     });
-    
+
 }
 
 function setSelectionLancement(current){
@@ -343,7 +343,7 @@ function setSelectionLancement(current){
     $('#contentMenu').animate({opacity:'0'},500,function(){
         $('#contentMenu').css({display:"none"});
     });
-    
+
 }
 
 $('.itemList').on('click',function(){
@@ -376,7 +376,7 @@ document.getElementById('cta').addEventListener('click',redirectCTA);
 
 $('.itemBTN').on('click',function(){
     // $('.activateCTA').on('click',redirectCTA);
-    
+
 
     if($(this).is('#otherPrice')){
         $('.itemBTN').removeClass('selectPrice');
@@ -388,7 +388,7 @@ $('.itemBTN').on('click',function(){
         $('.itemBTN').removeClass('selectPrice');
         $(this).addClass('selectPrice');
     }
-    
+
 
 
     if($(this).is('#firstPrice')){
@@ -399,7 +399,7 @@ $('.itemBTN').on('click',function(){
         $('#etape01').animate({opacity:1},800);
         $('#etape02').animate({opacity:0},800);
         $('#etape03').animate({opacity:0},800);
-        
+
         clearInterval(timing);
         clearTimeout(timeout);
         $('#contFettis').html("");
@@ -442,7 +442,7 @@ $('.itemBTN').on('click',function(){
         clearInterval(timing);
         clearTimeout(timeout);
         $('#contFettis').html("");
-        
+
 
         if(currentPet == "chat"){
             $('#sourceMP4').attr("src", v[0][2][0]);
@@ -477,7 +477,7 @@ $('.itemBTN').on('click',function(){
     if($(this).is('#thirdPrice')){
         // console.log('thirdPrice Click');
         video.setAttribute("loop",true);
-       
+
         clearInterval(timing);
         clearTimeout(timeout);
 
@@ -525,7 +525,7 @@ $('.itemBTN').on('click',function(){
         window.open('https://soutenir.la-spa.fr/b/'+newParamUrlOther, '_blank');
         // console.log('thirdPrice Click');
         // video.setAttribute("loop",true);
-        
+
 
         // clearInterval(timing);
         // clearTimeout(timeout);
@@ -584,7 +584,7 @@ function noLoopChien(){
     console.log('noLoopChien');
     document.getElementById('bgvid').removeEventListener('ended',noLoopChien);
 
-    
+
     $('#sourceMP4').attr("src", v[1][2][2]);
     $('#sourceWEBM').attr("src", v[1][2][3]);
     video.load();
@@ -600,7 +600,7 @@ function updatePet(){
             // $('#bgvid').css({"background-size":"cover"});
             $('#sourceMP4').attr("src", v[0][0][0]);
             $('#sourceWEBM').attr("src", v[0][0][1]);
-            
+
             video.load();
             resetBouton();
         break;
@@ -611,7 +611,7 @@ function updatePet(){
             // $('#bgvid').css({"background-size":"cover"});
             $('#sourceMP4').attr("src", v[1][0][0]);
             $('#sourceWEBM').attr("src", v[1][0][1]);
-            
+
             video.load();
             resetBouton();
             break;
@@ -622,7 +622,7 @@ function updatePet(){
             // $('#bgvid').css({"background-size":"cover"});
             $('#sourceMP4').attr("src", v[2][0][0]);
             $('#sourceWEBM').attr("src", v[2][0][1]);
-            
+
             video.load();
             resetBouton();
             break;
@@ -633,7 +633,7 @@ function updatePet(){
             // $('#bgvid').css({"background-size":"cover"});
             $('#sourceMP4').attr("src", v[3][0][0]);
             $('#sourceWEBM').attr("src", v[3][0][1]);
-            
+
             video.load();
             resetBouton();
             break;
@@ -644,7 +644,7 @@ function updatePet(){
 
 function firstNoLoop(){
     document.getElementById('bgvid').removeEventListener('ended',firstNoLoop);
-    
+
     if(currentPet == "chat"){
         video.setAttribute("loop", true);
         $('#sourceMP4').attr("src", v[0][1][0]);
@@ -685,7 +685,7 @@ function resetBouton(){
     clearTimeout(timeout);
     $('#contFettis').html("");
     $('#etape01, #etape02, #etape03').css({opacity:0});
-    
+
     $('.itemBTN').removeClass('selectPrice');
     $('#titreForm').css({display:"block"});
     $('#form').css({display:"none"});
@@ -716,8 +716,6 @@ function updateSize(){
         $('video').css({'width':'101%','height':'auto'});
 
             $('#contentMenu li').css({'background-position': '50% 25%'});
-            $('#menuList li').css({'background-position': '50% 25%'});  
+            $('#menuList li').css({'background-position': '50% 25%'});
     }
 }
-
-
