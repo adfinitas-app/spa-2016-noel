@@ -601,7 +601,7 @@ function updatePet(){
             //$('#sourceMP4').attr("src", v[0][1][0]);
             //$('#sourceWEBM').attr("src", v[0][1][1]);
 
-            //video.load();
+            video.load();
             resetBouton();
         break;
         case "chien":
