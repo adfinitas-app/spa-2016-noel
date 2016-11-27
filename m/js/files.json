@@ -64,10 +64,6 @@
     "type": "IMAGE",
     "size": 3674
   }, {
-    "source": "img/chat_vid_0.gif",
-    "type": "IMAGE",
-    "size": 898135
-  }, {
     "source": "img/chat_vid_1.gif",
     "type": "IMAGE",
     "size": 782194
@@ -78,12 +74,8 @@
   }, {
     "source": "img/chat_vid_3.gif",
     "type": "IMAGE",
-    "size": 1898575 
-  }, {
-    "source": "img/cheval_vid_0.gif",
-    "type": "IMAGE",
-    "size": 2812420
-  }, {
+    "size": 1898575
+  },  {
     "source": "img/cheval_vid_1.gif",
     "type": "IMAGE",
     "size": 1481082
@@ -96,10 +88,6 @@
     "type": "IMAGE",
     "size": 794623
   }, {
-    "source": "img/chien_vid_0.gif",
-    "type": "IMAGE",
-    "size": 2050536
-  }, {
     "source": "img/chien_vid_1.gif",
     "type": "IMAGE",
     "size": 594372
@@ -111,11 +99,7 @@
     "source": "img/chien_vid_3.gif",
     "type": "IMAGE",
     "size": 2571024
-  }, {
-    "source": "img/lapin_vid_0.gif",
-    "type": "IMAGE",
-    "size": 4387729 
-  }, {
+  },  {
     "source": "img/lapin_vid_1.gif",
     "type": "IMAGE",
     "size": 267985

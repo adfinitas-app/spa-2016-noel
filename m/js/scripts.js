@@ -11,7 +11,7 @@ $(document).ready(function(){
                     $('#pre_home').css({display:"none"});
                     animHomeAfterLoading();
                 },600);
-            },1000)           
+            },1000)
         },
         onElementLoaded:    function ( obj, elm) {
             // console.log(obj);
@@ -67,7 +67,7 @@ function animationConfettis1(){
         }
     },100);
 
- 
+
     timeout = setTimeout(function(){
         $('.chuteConf').animate({opacity:0},500,function(){
             clearInterval(timing);
@@ -104,7 +104,7 @@ function animationConfettis2(){
         }
     },100);
 
- 
+
     timeout = setTimeout(function(){
         $('.chuteConf').animate({opacity:0},500,function(){
             clearInterval(timing);
@@ -161,11 +161,11 @@ $(document).ready(function(){
     if($(window).width() + $(window).height() != _originalSize){
       console.log("keyboard show up");
       $('#animaux').css({'height':w_height+'px', top:'-52%'});
-      // $('#animaux').css({top:'-50%'});  
+      // $('#animaux').css({top:'-50%'});
     }else{
       console.log("keyboard closed");
       $('#animaux').css({'height':'100%', top:'0%'}, 'slow');
-      // $('#animaux').css({top:'0%'}); 
+      // $('#animaux').css({top:'0%'});
     }
   });
 });
@@ -173,10 +173,10 @@ $(document).ready(function(){
 
 // ANIMATION PRE-HOME //
 setTimeout(function(){
-        $('#logo_spa_pre_home').animate({top:"2%",opacity:"1"},600, "linear"); 
+        $('#logo_spa_pre_home').animate({top:"2%",opacity:"1"},600, "linear");
 },100);
 setTimeout(function(){
-        $('#titre_pre_home').animate({opacity:"1"},800, "linear");    
+        $('#titre_pre_home').animate({opacity:"1"},800, "linear");
 },300);
 
 // ANIMATION PRE-HOME //
@@ -193,7 +193,7 @@ function animHomeAfterLoading(){
 
     $('#home').css({display:"block"});
     $('#header_title_home').animate({opacity:"1"},1500, "linear");
-    $('#logo_spa_home').animate({opacity:"1"},800, "linear"); 
+    $('#logo_spa_home').animate({opacity:"1"},800, "linear");
     setTimeout(function(){
         $('#zone_animal_1').animate({left:"0%",opacity:"1"},800, "linear");
     },300);
@@ -273,19 +273,19 @@ $('#firstPrice').on('click',function(){
    $('#contFettis').html("");
     if (section_chien === 1) {
         $('#vid_1_chien').css({display:"block"});
-        $('#vid_0_chien,#vid_2_chien,#vid_3_chien').css({display:"none"});
+        $('#vid_2_chien,#vid_3_chien').css({display:"none"});
     }
     if (section_lapin === 1) {
         $('#vid_1_lapin').css({display:"block"});
-        $('#vid_0_lapin,#vid_2_lapin,#vid_3_lapin').css({display:"none"});
+        $('#vid_2_lapin,#vid_3_lapin').css({display:"none"});
     }
     if (section_chat === 1) {
         $('#vid_1_chat').css({display:"block"});
-        $('#vid_0_chat,#vid_2_chat,#vid_3_chat').css({display:"none"});
+        $('#vid_2_chat,#vid_3_chat').css({display:"none"});
     }
     if (section_cheval === 1) {
         $('#vid_1_cheval').css({display:"block"});
-        $('#vid_0_cheval,#vid_2_cheval,#vid_3_cheval').css({display:"none"});
+        $('#vid_2_cheval,#vid_3_cheval').css({display:"none"});
     }
 });
 $('#secondPrice').on('click',function(){
@@ -298,22 +298,22 @@ $('#secondPrice').on('click',function(){
     if (section_chien === 1) {
         animationConfettis1();
         $('#vid_2_chien').css({display:"block"});
-        $('#vid_0_chien,#vid_1_chien,#vid_3_chien').css({display:"none"});
+        $('#vid_1_chien,#vid_3_chien').css({display:"none"});
     }
     if (section_lapin === 1) {
         animationConfettis1();
         $('#vid_2_lapin').css({display:"block"});
-        $('#vid_0_lapin,#vid_1_lapin,#vid_3_lapin').css({display:"none"});
+        $('#vid_1_lapin,#vid_3_lapin').css({display:"none"});
     }
     if (section_chat === 1) {
         animationConfettis1();
         $('#vid_2_chat').css({display:"block"});
-        $('#vid_0_chat,#vid_1_chat,#vid_3_chat').css({display:"none"});
+        $('#vid_1_chat,#vid_3_chat').css({display:"none"});
     }
     if (section_cheval === 1) {
         animationConfettis1();
         $('#vid_2_cheval').css({display:"block"});
-        $('#vid_0_cheval,#vid_1_cheval,#vid_3_cheval').css({display:"none"});
+        $('#vid_1_cheval,#vid_3_cheval').css({display:"none"});
     }
 });
 $('#thirdPrice').on('click',function(){
@@ -326,22 +326,22 @@ $('#thirdPrice').on('click',function(){
     if (section_chien === 1) {
         animationConfettis2();
         $('#vid_3_chien').css({display:"block"});
-        $('#vid_0_chien,#vid_1_chien,#vid_2_chien').css({display:"none"});
+        $('#vid_1_chien,#vid_2_chien').css({display:"none"});
     }
     if (section_lapin === 1) {
         animationConfettis2();
         $('#vid_3_lapin').css({display:"block"});
-        $('#vid_0_lapin,#vid_1_lapin,#vid_2_lapin').css({display:"none"});
+        $('#vid_1_lapin,#vid_2_lapin').css({display:"none"});
     }
     if (section_chat === 1) {
         animationConfettis2();
         $('#vid_3_chat').css({display:"block"});
-        $('#vid_0_chat,#vid_1_chat,#vid_2_chat').css({display:"none"});
+        $('#vid_1_chat,#vid_2_chat').css({display:"none"});
     }
     if (section_cheval === 1) {
         animationConfettis2();
         $('#vid_3_cheval').css({display:"block"});
-        $('#vid_0_cheval,#vid_1_cheval,#vid_2_cheval').css({display:"none"});
+        $('#vid_1_cheval,#vid_2_cheval').css({display:"none"});
     }
 });
 
@@ -438,7 +438,7 @@ function animBtnMenuCloseALL(){
 }
 
 
-// $('#btn_lapin').css("background-image", "url(img/btn_chien.png)");  
+// $('#btn_lapin').css("background-image", "url(img/btn_chien.png)");
 // $("#vid_0").css({display:"block"}).attr('src','img/lapin_vid_0.gif');
 
 
@@ -458,14 +458,14 @@ $('#zone_animal_1').on('click',function(){
         document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de chouchou";
         $("#section_gifs_lapin").css({display:"block"});
         $("#section_gifs_chien,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
-        $('#vid_1_lapin,#vid_2_lapin,#vid_3_lapin').css({display:"none"});
-        $('#vid_0_lapin').css({display:"block"});
+        $('#vid_2_lapin,#vid_3_lapin').css({display:"none"});
+        $('#vid_1_lapin').css({display:"block"});
         $('.anim_vid').css({bottom:"-12%"});
 
         $('#btn_menu_expand_lapin').css({display:"block"});
         $('#btn_menu_expand_chien,#btn_menu_expand_chat,#btn_menu_expand_cheval').css({display:"none"});
         setTimeout(function(){
-            $('#home').animate({opacity:"0"},400, "linear"); 
+            $('#home').animate({opacity:"0"},400, "linear");
 
             $('#btn_chien').animate({marginRight:"10vw"},400, "linear");
             $('#btn_chat').animate({marginRight:"16vw"},400, "linear");
@@ -489,19 +489,19 @@ $('#btn_lapin').on('click',function(){
     document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de chouchou";
     $("#section_gifs_lapin").css({display:"block"});
     $("#section_gifs_chien,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
-    $('#vid_1_lapin,#vid_2_lapin,#vid_3_lapin').css({display:"none"});
-    $('#vid_0_lapin').css({display:"block"});
+    $('#vid_2_lapin,#vid_3_lapin').css({display:"none"});
+    $('#vid_1_lapin').css({display:"block"});
     $('.anim_vid').css({bottom:"-12%"});
 
     $('#btn_menu_expand_lapin').css({display:"block"});
     $('#btn_menu_expand_chien,#btn_menu_expand_chat,#btn_menu_expand_cheval').css({display:"none"});
     setTimeout(function(){
-        $('#home').animate({opacity:"0"},400, "linear"); 
+        $('#home').animate({opacity:"0"},400, "linear");
 
         $('#btn_chien').animate({marginRight:"10vw"},400, "linear");
         $('#btn_chat').animate({marginRight:"16vw"},400, "linear");
         $('#btn_cheval').animate({marginRight:"22vw"},400, "linear");
-        $('#btn_lapin').animate({marginRight:"2vw"},400, "linear");    
+        $('#btn_lapin').animate({marginRight:"2vw"},400, "linear");
     },500);
 });
 
@@ -523,14 +523,14 @@ $('#zone_animal_2').on('click',function(){
         document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de happy";
         $("#section_gifs_chien").css({display:"block"});
         $("#section_gifs_lapin,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
-        $('#vid_1_chien,#vid_2_chien,#vid_3_chien').css({display:"none"});
-        $('#vid_0_chien').css({display:"block"});
+        $('#vid_2_chien,#vid_3_chien').css({display:"none"});
+        $('#vid_1_chien').css({display:"block"});
         $('.anim_vid').css({bottom:"-2%"});
 
         $('#btn_menu_expand_chien').css({display:"block"});
         $('#btn_menu_expand_lapin,#btn_menu_expand_chat,#btn_menu_expand_cheval').css({display:"none"});
         setTimeout(function(){
-            $('#home').animate({opacity:"0"},400, "linear"); 
+            $('#home').animate({opacity:"0"},400, "linear");
 
             $('#btn_lapin').animate({marginRight:"10vw"},400, "linear");
             $('#btn_chat').animate({marginRight:"16vw"},400, "linear");
@@ -554,19 +554,19 @@ $('#btn_chien').on('click',function(){
     document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de happy";
     $("#section_gifs_chien").css({display:"block"});
     $("#section_gifs_lapin,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
-    $('#vid_1_chien,#vid_2_chien,#vid_3_chien').css({display:"none"});
-    $('#vid_0_chien').css({display:"block"});
+    $('#vid_2_chien,#vid_3_chien').css({display:"none"});
+    $('#vid_1_chien').css({display:"block"});
     $('.anim_vid').css({bottom:"-2%"});
 
     $('#btn_menu_expand_chien').css({display:"block"});
     $('#btn_menu_expand_lapin,#btn_menu_expand_chat,#btn_menu_expand_cheval').css({display:"none"});
     setTimeout(function(){
-        $('#home').animate({opacity:"0"},400, "linear"); 
+        $('#home').animate({opacity:"0"},400, "linear");
 
         $('#btn_lapin').animate({marginRight:"10vw"},400, "linear");
         $('#btn_chat').animate({marginRight:"16vw"},400, "linear");
         $('#btn_cheval').animate({marginRight:"22vw"},400, "linear");
-        $('#btn_chien').animate({marginRight:"2vw"},400, "linear");    
+        $('#btn_chien').animate({marginRight:"2vw"},400, "linear");
     },500);
 });
 
@@ -588,8 +588,8 @@ $('#zone_animal_3').on('click',function(){
         document.getElementById('liste_title_img').innerHTML="liste de no&euml;l d'atlas";
         $("#section_gifs_chat").css({display:"block"});
         $("#section_gifs_lapin,#section_gifs_chien,#section_gifs_cheval").css({display:"none"});
-        $('#vid_1_chat,#vid_2_chat,#vid_3_chat').css({display:"none"});
-        $('#vid_0_chat').css({display:"block"});
+        $('#vid_2_chat,#vid_3_chat').css({display:"none"});
+        $('#vid_1_chat').css({display:"block"});
         $('.anim_vid').css({bottom:"-12%"});
 
         $('#btn_menu_expand_chat').css({display:"block"});
@@ -619,8 +619,8 @@ $('#btn_chat').on('click',function(){
     document.getElementById('liste_title_img').innerHTML="liste de no&euml;l d'atlas";
     $("#section_gifs_chat").css({display:"block"});
     $("#section_gifs_lapin,#section_gifs_chien,#section_gifs_cheval").css({display:"none"});
-    $('#vid_1_chat,#vid_2_chat,#vid_3_chat').css({display:"none"});
-    $('#vid_0_chat').css({display:"block"});
+    $('#vid_2_chat,#vid_3_chat').css({display:"none"});
+    $('#vid_1_chat').css({display:"block"});
     $('.anim_vid').css({bottom:"-12%"});
 
     $('#btn_menu_expand_chat').css({display:"block"});
@@ -631,7 +631,7 @@ $('#btn_chat').on('click',function(){
         $('#btn_chien').animate({marginRight:"10vw"},400, "linear");
         $('#btn_lapin').animate({marginRight:"16vw"},400, "linear");
         $('#btn_cheval').animate({marginRight:"22vw"},400, "linear");
-        $('#btn_chat').animate({marginRight:"2vw"},400, "linear");    
+        $('#btn_chat').animate({marginRight:"2vw"},400, "linear");
     },500);
 });
 
@@ -652,8 +652,8 @@ $('#zone_animal_4').on('click',function(){
         document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de willow";
         $("#section_gifs_cheval").css({display:"block"});
         $("#section_gifs_lapin,#section_gifs_chien,#section_gifs_chat").css({display:"none"});
-        $('#vid_1_cheval,#vid_2_cheval,#vid_3_cheval').css({display:"none"});
-        $('#vid_0_cheval').css({display:"block"});
+        $('#vid_2_cheval,#vid_3_cheval').css({display:"none"});
+        $('#vid_1_cheval').css({display:"block"});
         $('.anim_vid').css({bottom:"0%"});
 
         $('#btn_menu_expand_cheval').css({display:"block"});
@@ -683,8 +683,8 @@ $('#btn_cheval').on('click',function(){
     document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de willow";
     $("#section_gifs_cheval").css({display:"block"});
     $("#section_gifs_lapin,#section_gifs_chien,#section_gifs_chat").css({display:"none"});
-    $('#vid_1_cheval,#vid_2_cheval,#vid_3_cheval').css({display:"none"});
-    $('#vid_0_cheval').css({display:"block"});
+    $('#vid_2_cheval,#vid_3_cheval').css({display:"none"});
+    $('#vid_1_cheval').css({display:"block"});
     $('.anim_vid').css({bottom:"0%"});
 
     $('#btn_menu_expand_cheval').css({display:"block"});
@@ -695,7 +695,7 @@ $('#btn_cheval').on('click',function(){
         $('#btn_chien').animate({marginRight:"10vw"},400, "linear");
         $('#btn_lapin').animate({marginRight:"16vw"},400, "linear");
         $('#btn_chat').animate({marginRight:"22vw"},400, "linear");
-        $('#btn_cheval').animate({marginRight:"2vw"},400, "linear");    
+        $('#btn_cheval').animate({marginRight:"2vw"},400, "linear");
     },500);
 });
 
@@ -735,14 +735,11 @@ $(function() {
     $('#boutonList li .sup span').css({top: "52%", left: "1%"});
     $('#otherPrice .sup span').css({top: "53%", left: "-41%"});
 
-    $("#vid_0_lapin,#vid_1_lapin,#vid_2_lapin,#vid_3_lapin").addClass("lapin_ipad");
-    $('#vid_0_chien,#vid_1_chien,#vid_2_chien,#vid_3_chien').addClass("chien_ipad");
-    $('#vid_0_chat,#vid_1_chat,#vid_2_chat,#vid_3_chat').addClass("chat_ipad");
-    $('#vid_0_cheval,#vid_1_cheval,#vid_2_cheval,#vid_3_cheval').addClass("cheval_ipad");
+    $("#vid_1_lapin,#vid_2_lapin,#vid_3_lapin").addClass("lapin_ipad");
+    $('#vid_1_chien,#vid_2_chien,#vid_3_chien').addClass("chien_ipad");
+    $('#vid_1_chat,#vid_2_chat,#vid_3_chat').addClass("chat_ipad");
+    $('#vid_1_cheval,#vid_2_cheval,#vid_3_cheval').addClass("cheval_ipad");
 
     document.getElementById('texte_rotate').innerHTML="VEUILLEZ TOURNER<br>vOTRE tablette<br>POUR une meilleure<br>exp&eacute;rience...";
   }
 });
-
-
-
