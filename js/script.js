@@ -137,7 +137,6 @@ $( document ).ready(function() {
 
 
 // Confettis
-
 var range;
 range = function(a, b) {
     return (b - a) * Math.random() + a;
@@ -645,6 +644,12 @@ function updatePet(){
     }
 
     document.getElementById('bgvid').addEventListener('ended',firstNoLoop);
+
+    //add arnaud
+    montantSelected = prix01;
+    $('#firstPrice').addClass('selectPrice');
+    $('#cta').addClass('activateCTA');
+    //end add arnaud
 }
 
 function firstNoLoop(){
