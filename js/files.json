@@ -8,7 +8,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHIEN_HD_00.webm",
-        "size": 14625011
+        "size": 2389813
       }
     }
   }, {
@@ -16,7 +16,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHIEN_HD_01.webm",
-        "size": 655042
+        "size": 675148
       }
     }
   }, {
@@ -24,7 +24,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHIEN_HD_02_b.webm",
-        "size": 591274
+        "size": 607533
       }
     }
   }, {
@@ -32,7 +32,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHAT_HD_Dsk_00.webm",
-        "size": 402221
+        "size": 377338
       }
     }
   }, {
@@ -40,7 +40,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHAT_HD_Dsk_01.webm",
-        "size": 316183
+        "size": 235523
       }
     }
   }, {
@@ -48,7 +48,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHEVAL_HD_Dsk_00.webm",
-        "size": 890777
+        "size": 762540
       }
     }
   }, {
@@ -56,7 +56,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHEVAL_HD_Dsk_01.webm",
-        "size": 550762
+        "size": 442436
       }
     }
   }, {
@@ -64,7 +64,7 @@
     "sources": {
       "webm": {
         "source": "videos/LAPIN_HD_Dsk_00.webm",
-        "size": 1514475
+        "size": 1353194
       }
     }
   },  {
@@ -72,7 +72,7 @@
     "sources": {
       "webm": {
         "source": "videos/LAPIN_HD_Dsk_01.webm",
-        "size": 187941
+        "size": 154599
       }
     }
   }, {
@@ -80,7 +80,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHIEN_HD_02.webm",
-        "size": 1749381
+        "size": 1973958
       }
     }
   }, {
@@ -88,7 +88,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHIEN_HD_03.webm",
-        "size": 1553836
+        "size": 1652722
       }
     }
   }, {
@@ -96,7 +96,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHAT_HD_Dsk_02.webm",
-        "size": 336172
+        "size": 282741
       }
     }
   }, {
@@ -104,7 +104,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHAT_HD_Dsk_03.webm",
-        "size": 725708
+        "size": 692034
       }
     }
   }, {
@@ -112,7 +112,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHEVAL_HD_Dsk_02.webm",
-        "size": 554331
+        "size": 449908
       }
     }
   }, {
@@ -120,7 +120,7 @@
     "sources": {
       "webm": {
         "source": "videos/CHEVAL_HD_Dsk_03.webm",
-        "size": 447255
+        "size": 446643
       }
     }
   }, {
@@ -128,7 +128,7 @@
     "sources": {
       "webm": {
         "source": "videos/LAPIN_HD_Dsk_02.webm",
-        "size": 174966
+        "size": 138364
       }
     }
   },  {
@@ -136,7 +136,7 @@
     "sources": {
       "webm": {
         "source": "videos/LAPIN_HD_Dsk_03.webm",
-        "size": 182798
+        "size": 107946
       }
     }
   }, {
