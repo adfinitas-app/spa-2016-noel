@@ -101,15 +101,11 @@ $( document ).ready(function() {
     videoQuery = $('#bgvid');
     var filejson = '';
     if (Modernizr.video.webm) {
-       alert('webm');
-    } else {
-       alert('WTF');
-    };
-    if (Modernizr.video.webm) {
        filejson = 'js/files.json'
     } else {
        filejson = 'js/files-mp4.json'
     };
+    alert(filejson);
     $.html5Loader({
         filesToLoad:    filejson, // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
