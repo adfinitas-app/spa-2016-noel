@@ -599,6 +599,7 @@ function updatePet(){
     switch(currentPet) {
         case "chat":
             $('#titreListe span').html('Liste de Noël d\'Atlas');
+            video.setAttribute("loop", true);
             // video.setAttribute("poster", "images/posterChat.jpg");
             // $('#bgvid').css({"background":"url('images/posterChat.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -607,11 +608,11 @@ function updatePet(){
             $('#sourceMP4').attr("src", v[0][1][0]);
             $('#sourceWEBM').attr("src", v[0][1][1]);
             video.load();
-            video.setAttribute("loop", true);
             resetBouton();
         break;
         case "chien":
             $('#titreListe span').html('Liste de Noël de Happy');
+            video.setAttribute("loop", true);
             // video.setAttribute("poster", "images/posterChien.jpg");
             // $('#bgvid').css({"background":"url('images/posterChien.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -619,13 +620,12 @@ function updatePet(){
             //$('#sourceWEBM').attr("src", v[1][0][1]);
             $('#sourceMP4').attr("src", v[1][1][0]);
             $('#sourceWEBM').attr("src", v[1][1][1]);
-
             video.load();
-            video.setAttribute("loop", true);
             resetBouton();
             break;
         case "cheval":
             $('#titreListe span').html('Liste de Noël de Willow');
+            video.setAttribute("loop", true);
             // video.setAttribute("poster", "images/posterCheval.jpg");
             // $('#bgvid').css({"background":"url('images/posterCheval.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -634,11 +634,11 @@ function updatePet(){
             $('#sourceMP4').attr("src", v[2][1][0]);
             $('#sourceWEBM').attr("src", v[2][1][1]);
             video.load();
-            video.setAttribute("loop", true);
             resetBouton();
             break;
         case "lapin":
             $('#titreListe span').html('Liste de Noël de Chouchou');
+            video.setAttribute("loop", true);
             // video.setAttribute("poster", "images/posterLapin.jpg");
             // $('#bgvid').css({"background":"url('images/posterLapin.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -647,7 +647,6 @@ function updatePet(){
             $('#sourceMP4').attr("src", v[3][1][0]);
             $('#sourceWEBM').attr("src", v[3][1][1]);
             video.load();
-            video.setAttribute("loop", true);
             resetBouton();
             break;
     }
