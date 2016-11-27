@@ -100,9 +100,13 @@ $( document ).ready(function() {
     updateSize();
     video = document.getElementById('bgvid');
     videoQuery = $('#bgvid');
-
+    if (Modernizr.video.webm) {
+      var filejson =  'js/files.json'
+    } else {
+      var filejson = 'js/files-mp4.json'
+    };
     $.html5Loader({
-        filesToLoad:    'js/files.json', // this could be a JSON or simply a javascript object
+        filesToLoad:    filejson, // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
 
         },
@@ -354,11 +358,8 @@ $('.itemBTN').on('click',function(){
         $('#contFettis').html("");
 
         if(currentPet == "chat"){
-          if (Modernizr.video.webm) {
-            $('#sourceWEBM').attr("src", v[0][1][1]);
-            } else {
             $('#sourceMP4').attr("src", v[0][1][0]);
-            }
+            $('#sourceWEBM').attr("src", v[0][1][1]);
             video.load();
         }
 
@@ -397,11 +398,8 @@ $('.itemBTN').on('click',function(){
 
 
         if(currentPet == "chat"){
-          if (Modernizr.video.webm) {
-          $('#sourceWEBM').attr("src", v[0][2][1]);
-            } else {
             $('#sourceMP4').attr("src", v[0][2][0]);
-            }
+            $('#sourceWEBM').attr("src", v[0][2][1]);
             video.load();
         }
 
@@ -441,11 +439,8 @@ $('.itemBTN').on('click',function(){
         $('#etape03').animate({opacity:1},800);
 
         if(currentPet == "chat"){
-          if (Modernizr.video.webm) {
-          $('#sourceWEBM').attr("src", v[0][3][1]);
-            } else {
             $('#sourceMP4').attr("src", v[0][3][0]);
-            }
+            $('#sourceWEBM').attr("src", v[0][3][1]);
             video.load();
         }
 
