@@ -105,7 +105,7 @@ $( document ).ready(function() {
       if (Modernizr.video.webm) {
         filejson =  '/js/files.json'
       } else {
-        filejson = '/js/files-mp4.json'
+        filejson = '/js/files.json'
       }
     };
     $.html5Loader({

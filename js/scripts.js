@@ -3,7 +3,7 @@ $(document).ready(function(){
     if (Modernizr.video.webm) {
       var filejson =  'js/files.json'
     } else {
-      var filejson = 'js/files-mp4.json'
+      var filejson = 'js/files.json'
     };
     $.html5Loader({
         filesToLoad:    filejson, // this could be a JSON or simply a javascript object
