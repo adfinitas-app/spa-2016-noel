@@ -599,7 +599,6 @@ function updatePet(){
     switch(currentPet) {
         case "chat":
             $('#titreListe span').html('Liste de Noël d\'Atlas');
-            video.setAttribute("loop", true);
             // video.setAttribute("poster", "images/posterChat.jpg");
             // $('#bgvid').css({"background":"url('images/posterChat.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -612,7 +611,6 @@ function updatePet(){
         break;
         case "chien":
             $('#titreListe span').html('Liste de Noël de Happy');
-            video.setAttribute("loop", true);
             // video.setAttribute("poster", "images/posterChien.jpg");
             // $('#bgvid').css({"background":"url('images/posterChien.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -625,7 +623,6 @@ function updatePet(){
             break;
         case "cheval":
             $('#titreListe span').html('Liste de Noël de Willow');
-            video.setAttribute("loop", true);
             // video.setAttribute("poster", "images/posterCheval.jpg");
             // $('#bgvid').css({"background":"url('images/posterCheval.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -638,7 +635,6 @@ function updatePet(){
             break;
         case "lapin":
             $('#titreListe span').html('Liste de Noël de Chouchou');
-            video.setAttribute("loop", true);
             // video.setAttribute("poster", "images/posterLapin.jpg");
             // $('#bgvid').css({"background":"url('images/posterLapin.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -657,6 +653,7 @@ function updatePet(){
     montantSelected = prix01;
     $('#firstPrice').addClass('selectPrice');
     $('#cta').addClass('activateCTA');
+    video.setAttribute("loop", true);
     //end add arnaud
 }
 
