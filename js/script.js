@@ -100,13 +100,14 @@ $( document ).ready(function() {
     updateSize();
     video = document.getElementById('bgvid');
     videoQuery = $('#bgvid');
+    var filejson = '';
     if (Modernizr.video) {
       if (Modernizr.video.webm) {
         var filejson =  'js/files.json'
       } else {
         var filejson = 'js/files-mp4.json'
       }
-    }
+    };
     $.html5Loader({
         filesToLoad:    filejson, // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
