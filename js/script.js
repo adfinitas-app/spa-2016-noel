@@ -96,12 +96,14 @@ $( document ).ready(function() {
             // alert('redirectMobile');
             redirectMobile();
      }
-
+    if ( $.browser.webkit ) {
+    alert( "This is WebKit!" );
+    }
     updateSize();
     video = document.getElementById('bgvid');
     videoQuery = $('#bgvid');
     $.html5Loader({
-        filesToLoad:    '/js/files-mp4.json', // this could be a JSON or simply a javascript object
+        filesToLoad:    '/js/files.json', // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
         },
         onComplete:         function () {
