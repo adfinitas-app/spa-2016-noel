@@ -606,7 +606,7 @@ function updatePet(){
             //$('#sourceWEBM').attr("src", v[0][0][1]);
             $('#sourceMP4').attr("src", v[0][1][0]);
             $('#sourceWEBM').attr("src", v[0][1][1]);
-
+            video.setAttribute("loop", true);
             video.load();
             resetBouton();
         break;
@@ -619,7 +619,7 @@ function updatePet(){
             //$('#sourceWEBM').attr("src", v[1][0][1]);
             $('#sourceMP4').attr("src", v[1][1][0]);
             $('#sourceWEBM').attr("src", v[1][1][1]);
-
+            video.setAttribute("loop", true);
             video.load();
             resetBouton();
             break;
@@ -632,7 +632,7 @@ function updatePet(){
             //$('#sourceWEBM').attr("src", v[2][0][1]);
             $('#sourceMP4').attr("src", v[2][1][0]);
             $('#sourceWEBM').attr("src", v[2][1][1]);
-
+            video.setAttribute("loop", true);
             video.load();
             resetBouton();
             break;
@@ -645,7 +645,7 @@ function updatePet(){
             //$('#sourceWEBM').attr("src", v[3][0][1]);
             $('#sourceMP4').attr("src", v[3][1][0]);
             $('#sourceWEBM').attr("src", v[3][1][1]);
-
+            video.setAttribute("loop", true);
             video.load();
             resetBouton();
             break;
