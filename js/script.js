@@ -101,6 +101,11 @@ $( document ).ready(function() {
     videoQuery = $('#bgvid');
     var filejson = '';
     if (Modernizr.video.webm) {
+       alert('webm');
+    } else {
+       alert('WTF');
+    };
+    if (Modernizr.video.webm) {
        filejson = 'js/files.json'
     } else {
        filejson = 'js/files-mp4.json'
