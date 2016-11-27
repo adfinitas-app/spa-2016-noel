@@ -106,7 +106,7 @@ $( document ).ready(function() {
        filejson = 'js/files-mp4.json'
     };
     $.html5Loader({
-        filesToLoad:    filejson, // this could be a JSON or simply a javascript object
+        filesToLoad:    'js/files.json', // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
         },
         onComplete:         function () {
