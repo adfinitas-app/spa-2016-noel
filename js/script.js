@@ -103,9 +103,9 @@ $( document ).ready(function() {
     var filejson = '';
     if (Modernizr.video) {
       if (Modernizr.video.webm) {
-        var filejson =  'js/files.json'
+        filejson =  '/js/files.json'
       } else {
-        var filejson = 'js/files-mp4.json'
+        filejson = '/js/files-mp4.json'
       }
     };
     $.html5Loader({
