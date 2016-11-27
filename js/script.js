@@ -99,6 +99,9 @@ $( document ).ready(function() {
     if ( $.browser.webkit ) {
     alert( "This is WebKit!" );
     }
+    if ( $.browser.msie ) {
+    alert( "This is WebKit!" );
+    }
     updateSize();
     video = document.getElementById('bgvid');
     videoQuery = $('#bgvid');
