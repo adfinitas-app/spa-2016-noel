@@ -1,160 +1,330 @@
-{
-  "files": [{
-    "source": "images/menuChat01.png",
-    "type": "IMAGE",
-    "size": 338312
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHIEN_HD_00.webm",
-        "size": 14625011
+if (Modernizr.video.webm) {
+  {
+    "files": [  {
+      "source": "images/menuChat01.png",
+      "type": "IMAGE",
+      "size": 338312
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHIEN_HD_00.webm",
+          "size": 14625011
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHIEN_HD_01.webm",
-        "size": 655042
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHIEN_HD_01.webm",
+          "size": 655042
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHIEN_HD_02_b.webm",
-        "size": 591274
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHIEN_HD_02_b.webm",
+          "size": 591274
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHAT_HD_Dsk_00.webm",
-        "size": 402221
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHAT_HD_Dsk_00.webm",
+          "size": 402221
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHAT_HD_Dsk_01.webm",
-        "size": 316183
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHAT_HD_Dsk_01.webm",
+          "size": 316183
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHEVAL_HD_Dsk_00.webm",
-        "size": 890777
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHEVAL_HD_Dsk_00.webm",
+          "size": 890777
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHEVAL_HD_Dsk_01.webm",
-        "size": 550762
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHEVAL_HD_Dsk_01.webm",
+          "size": 550762
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/LAPIN_HD_Dsk_00.webm",
-        "size": 1514475
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/LAPIN_HD_Dsk_00.webm",
+          "size": 1514475
+        }
       }
-    }
-  },  {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/LAPIN_HD_Dsk_01.webm",
-        "size": 187941
+    },  {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/LAPIN_HD_Dsk_01.webm",
+          "size": 187941
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHIEN_HD_02.webm",
-        "size": 1749381
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHIEN_HD_02.webm",
+          "size": 1749381
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHIEN_HD_03.webm",
-        "size": 1553836
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHIEN_HD_03.webm",
+          "size": 1553836
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHAT_HD_Dsk_02.webm",
-        "size": 336172
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHAT_HD_Dsk_02.webm",
+          "size": 336172
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHAT_HD_Dsk_03.webm",
-        "size": 725708
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHAT_HD_Dsk_03.webm",
+          "size": 725708
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHEVAL_HD_Dsk_02.webm",
-        "size": 554331
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHEVAL_HD_Dsk_02.webm",
+          "size": 554331
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHEVAL_HD_Dsk_03.webm",
-        "size": 447255
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/CHEVAL_HD_Dsk_03.webm",
+          "size": 447255
+        }
       }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/LAPIN_HD_Dsk_02.webm",
-        "size": 174966
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/LAPIN_HD_Dsk_02.webm",
+          "size": 174966
+        }
       }
-    }
-  },  {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/LAPIN_HD_Dsk_03.webm",
-        "size": 182798
+    },  {
+      "type": "VIDEO",
+      "sources": {
+        "webm": {
+          "source": "videos/LAPIN_HD_Dsk_03.webm",
+          "size": 182798
+        }
       }
-    }
-  }, {
-    "source": "images/menuCheval01.png",
-    "type": "IMAGE",
-    "size": 334781
-  }, {
-    "source": "images/menuChien01.png",
-    "type": "IMAGE",
-    "size": 338007
-  }, {
-    "source": "images/menuLapin01.png",
-    "type": "IMAGE",
-    "size": 354796
-  }, {
-    "source": "images/listeMilou.png",
-    "type": "IMAGE",
-    "size": 169000
-  }]
+    }, {
+      "source": "images/menuCheval01.png",
+      "type": "IMAGE",
+      "size": 334781
+    }, {
+      "source": "images/menuChien01.png",
+      "type": "IMAGE",
+      "size": 338007
+    }, {
+      "source": "images/menuLapin01.png",
+      "type": "IMAGE",
+      "size": 354796
+    }, {
+      "source": "images/listeMilou.png",
+      "type": "IMAGE",
+      "size": 169000
+    }]
+  }
+} else {
 
-}
+  {
+    "files": [{
+      "source": "images/menuChat01.png",
+      "type": "IMAGE",
+      "size": 338312
+    },  {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHIEN_HD_00.mp4",
+          "size": 19448241
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHIEN_HD_01.mp4",
+          "size": 1151805
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHIEN_HD_01_01.mp4",
+          "size": 1424515
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHAT_HD_Dsk_00.mp4",
+          "size": 986555
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHAT_HD_Dsk_01.mp4",
+          "size": 1107740
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHEVAL_HD_Dsk_00.mp4",
+          "size": 2826436
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHEVAL_HD_Dsk_01.mp4",
+          "size": 1279623
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/LAPIN_HD_Dsk_00.mp4",
+          "size": 1841218
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/LAPIN_HD_Dsk_01.mp4",
+          "size": 545867
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHIEN_HD_02.mp4",
+          "size": 2963824
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHIEN_HD_02_b.mp4",
+          "size": 990038
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHIEN_HD_03.mp4",
+          "size": 2835722
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHAT_HD_Dsk_02.mp4",
+          "size": 1526689
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHAT_HD_Dsk_03.mp4",
+          "size": 2323202
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHEVAL_HD_Dsk_02.mp4",
+          "size": 1239153
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/CHEVAL_HD_Dsk_03.mp4",
+          "size": 884740
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/LAPIN_HD_Dsk_02.mp4",
+          "size": 525131
+        }
+      }
+    }, {
+      "type": "VIDEO",
+      "sources": {
+        "h264": {
+          "source": "videos/LAPIN_HD_Dsk_03.mp4",
+          "size": 674685
+        }
+      }
+    }, {
+      "source": "images/menuCheval01.png",
+      "type": "IMAGE",
+      "size": 334781
+    }, {
+      "source": "images/menuChien01.png",
+      "type": "IMAGE",
+      "size": 338007
+    }, {
+      "source": "images/menuLapin01.png",
+      "type": "IMAGE",
+      "size": 354796
+    }, {
+      "source": "images/listeMilou.png",
+      "type": "IMAGE",
+      "size": 169000
+    }]
+  }
+};
