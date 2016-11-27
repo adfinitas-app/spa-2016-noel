@@ -101,9 +101,8 @@ $( document ).ready(function() {
     video = document.getElementById('bgvid');
     videoQuery = $('#bgvid');
     $.html5Loader({
-        filesToLoad:    '/js/files.json', // this could be a JSON or simply a javascript object
+        filesToLoad:    '/js/files-mp4.json', // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
-
         },
         onComplete:         function () {
             setTimeout(function(){
