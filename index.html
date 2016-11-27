@@ -282,10 +282,8 @@
 
 
 
-    <script src="js/script.js"></script>
-
     <script src="js/jquery.html5Loader.js"></script>
-
+    <script src="js/script.js"></script>
     <script>
       function extractUrlParams(){
         var t = document.location.search.substring(1).split('&'); var f = [];
@@ -317,7 +315,6 @@
       }
       woopra.track('pv', {'url':document.location.pathname, 'title': document.title, 'reserved_code_media': p['reserved_code_media']});
     </script>
-
     <script>
       $.urlParam = function(name){
         if(new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href) == null){

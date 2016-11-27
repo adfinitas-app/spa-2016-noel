@@ -95,13 +95,10 @@ $( document ).ready(function() {
      if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
             // alert('redirectMobile');
             redirectMobile();
-     }
-    if ( $.browser.webkit ) {
-    alert( "This is WebKit!" );
-    }
-    if ( $.browser.msie ) {
-    alert( "This is WebKit!" );
-    }
+     };
+     if ( $.browser.webkit ) {
+     alert( "This is WebKit!" );
+   };
     updateSize();
     video = document.getElementById('bgvid');
     videoQuery = $('#bgvid');
