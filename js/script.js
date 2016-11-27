@@ -99,7 +99,7 @@ $( document ).ready(function() {
     updateSize();
     video = document.getElementById('bgvid');
     videoQuery = $('#bgvid');
-    var filejson = '/js/files.json';
+    var filejson = '';
     if (Modernizr.video.webm) {
        filejson = '/js/files.json';
     } else {
