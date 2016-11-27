@@ -2,35 +2,35 @@
   "files": [{
     "source": "img/btn_chat.png",
     "type": "IMAGE",
-    "size": 7024
+    "size": 7198
   }, {
     "source": "img/btn_cheval.png",
     "type": "IMAGE",
-    "size": 6604
+    "size": 6623
   }, {
     "source": "img/btn_chien.png",
     "type": "IMAGE",
-    "size": 7188
+    "size": 7045
   }, {
     "source": "img/btn_lapin.png",
     "type": "IMAGE",
-    "size": 7660
+    "size": 7671
   }, {
     "source": "img/chat_home.jpg",
     "type": "IMAGE",
-    "size": 68369
+    "size": 16226
   }, {
     "source": "img/cheval_home.jpg",
     "type": "IMAGE",
-    "size": 69778
+    "size": 17693
   }, {
     "source": "img/chien_home.jpg",
     "type": "IMAGE",
-    "size": 70114
+    "size": 19857
   }, {
     "source": "img/lapin_home.jpg",
     "type": "IMAGE",
-    "size": 79488
+    "size": 27586
   }, {
     "source": "img/close_menu.png",
     "type": "IMAGE",
@@ -66,51 +66,50 @@
   }, {
     "source": "img/chat_vid_1.gif",
     "type": "IMAGE",
-    "size": 782194
+    "size": 644940
   }, {
     "source": "img/chat_vid_2.gif",
     "type": "IMAGE",
-    "size": 766190
+    "size": 629160
   }, {
     "source": "img/chat_vid_3.gif",
     "type": "IMAGE",
-    "size": 1898575
+    "size": 1569521
   },  {
     "source": "img/cheval_vid_1.gif",
     "type": "IMAGE",
-    "size": 1481082
+    "size": 1216241
   }, {
     "source": "img/cheval_vid_2.gif",
     "type": "IMAGE",
-    "size": 1480076
+    "size": 1212700
   }, {
     "source": "img/cheval_vid_3.gif",
     "type": "IMAGE",
-    "size": 794623
+    "size": 648956
   }, {
     "source": "img/chien_vid_1.gif",
     "type": "IMAGE",
-    "size": 594372
+    "size": 481576
   }, {
     "source": "img/chien_vid_2.gif",
     "type": "IMAGE",
-    "size": 3532153
+    "size": 2915081
   }, {
     "source": "img/chien_vid_3.gif",
     "type": "IMAGE",
-    "size": 2571024
+    "size": 2125366
   },  {
     "source": "img/lapin_vid_1.gif",
     "type": "IMAGE",
-    "size": 267985
+    "size": 206347
   }, {
     "source": "img/lapin_vid_2.gif",
     "type": "IMAGE",
-    "size": 162171
+    "size": 124560
   }, {
     "source": "img/lapin_vid_3.gif",
     "type": "IMAGE",
-    "size": 196456
+    "size": 155279
   }]
-
 }
