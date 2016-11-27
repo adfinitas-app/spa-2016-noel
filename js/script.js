@@ -95,7 +95,8 @@ $( document ).ready(function() {
      if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
             // alert('redirectMobile');
             redirectMobile();
-     };
+     }
+
     updateSize();
     video = document.getElementById('bgvid');
     videoQuery = $('#bgvid');
@@ -108,6 +109,7 @@ $( document ).ready(function() {
     $.html5Loader({
         filesToLoad:    filejson, // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
+
         },
         onComplete:         function () {
             setTimeout(function(){
@@ -176,6 +178,36 @@ function animationConfettis(){
 
         $('#contFettis').append('<div class="'+chute+'"><div class="confettis '+animRot+'" style="width:'+widthC+'px;height:'+widthC+'px; left:'+leftC+'px; top:'+topC+'px; background-color:rgb('+color[0]+','+color[1]+','+color[2]+'); transform-origin:'+centreT+'% '+centreL+'%;-webkit-transform-origin:'+centreT+'% '+centreL+'%;"></div></div>');
 
+        // var widthC2 = range(2,20);
+        // var leftC2 = range(0,widthScreen);
+        // var topC2 = range(0,100);
+        // // var leftC = range(0,100);
+        // // var topC = range(0,100);
+
+        // var centreT2 = ~~range(0,50);
+        // var centreL2 = ~~range(0,50);
+        // var animRot2 = ANIMROT[~~range(0, 12)];
+
+        // var color2 = COLORS[~~range(0, 3)];
+        // var chute2 = CHUTE[~~range(0, 2)];
+
+        // $('#contFettis').append('<div class="'+chute2+'"><div class="confettis '+animRot2+'" style="width:'+widthC2+'px;height:'+widthC2+'px; left:'+leftC2+'px; top:'+topC2+'px; background-color:rgb('+color2[0]+','+color2[1]+','+color2[2]+'); transform-origin:'+centreT2+'% '+centreL2+'%;-webkit-transform-origin:'+centreT2+'% '+centreL2+'%;"></div></div>');
+
+        // var widthC3 = range(2,20);
+        // var leftC3 = range(0,widthScreen);
+        // var topC3 = range(0,100);
+        // // var leftC = range(0,100);
+        // // var topC = range(0,100);
+
+        // var centreT3 = ~~range(0,50);
+        // var centreL3 = ~~range(0,50);
+        // var animRot3 = ANIMROT[~~range(0, 12)];
+
+        // var color3 = COLORS[~~range(0, 3)];
+        // var chute3 = CHUTE[~~range(0, 2)];
+
+        // $('#contFettis').append('<div class="'+chute3+'"><div class="confettis '+animRot3+'" style="width:'+widthC3+'px;height:'+widthC3+'px; left:'+leftC3+'px; top:'+topC3+'px; background-color:rgb('+color3[0]+','+color3[1]+','+color3[2]+'); transform-origin:'+centreT3+'% '+centreL3+'%;-webkit-transform-origin:'+centreT3+'% '+centreL3+'%;"></div></div>');
+
         o = o+1;
         // console.log(o);
         if(o>(numberConf)){
@@ -193,6 +225,27 @@ function animationConfettis(){
         });
     },8000);
 
+
+    // var time = Date.now();
+    // var b = window.innerHeight;
+    // console.log('time : '+time);
+
+
+    // var intervalLog = setInterval(function(){
+    //     // console.log('intervalLog');
+
+    //     timing = timing + 1;
+    //     // console.log('x : '+x);
+    //     var y = (a*(timing*timing))/100;
+    //     console.log('y : '+y);
+
+    //     $('.confettis').css({top:y, left:timing});
+
+    //     if(y>widthScreen){
+    //         clearInterval(intervalLog);
+    //     }
+
+    // },10);
 }
 
 function animationConfettis2(){
@@ -475,7 +528,44 @@ $('.itemBTN').on('click',function(){
         console.log('newParamUrlOther : '+newParamUrlOther);
 
         window.open('https://soutenir.la-spa.fr/b/'+newParamUrlOther, '_blank');
+        // console.log('thirdPrice Click');
+        // video.setAttribute("loop",true);
 
+
+        // clearInterval(timing);
+        // clearTimeout(timeout);
+
+        // $("#montant").focus();
+
+        // $('#etape01').animate({opacity:1},800);
+        // $('#etape02').animate({opacity:1},800);
+        // $('#etape03').animate({opacity:1},800);
+
+        // if(currentPet == "chat"){
+        //     $('#sourceMP4').attr("src", v[0][3][0]);
+        //     $('#sourceWEBM').attr("src", v[0][3][1]);
+        //     video.load();
+        // }
+
+        // if(currentPet == "chien"){
+        //     video.removeAttribute("loop");
+        //     $('#sourceMP4').attr("src", v[1][3][0]);
+        //     $('#sourceWEBM').attr("src", v[1][3][1]);
+        //     video.load();
+        // }
+
+        // if(currentPet == "cheval"){
+        //     $('#sourceMP4').attr("src", v[2][3][0]);
+        //     $('#sourceWEBM').attr("src", v[2][3][1]);
+        //     video.load();
+        // }
+
+        // if(currentPet == "lapin"){
+        //     $('#sourceMP4').attr("src", v[3][3][0]);
+        //     $('#sourceWEBM').attr("src", v[3][3][1]);
+        //     video.load();
+        // }
+        // animationConfettis();
     }
 });
 
@@ -513,8 +603,8 @@ function updatePet(){
             // video.setAttribute("poster", "images/posterChat.jpg");
             // $('#bgvid').css({"background":"url('images/posterChat.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
-            //$('#sourceMP4').attr("src", v[0][1][0]);
-            //$('#sourceWEBM').attr("src", v[0][1][1]);
+            $('#sourceMP4').attr("src", v[0][0][0]);
+            $('#sourceWEBM').attr("src", v[0][0][1]);
 
             video.load();
             resetBouton();
@@ -524,8 +614,8 @@ function updatePet(){
             // video.setAttribute("poster", "images/posterChien.jpg");
             // $('#bgvid').css({"background":"url('images/posterChien.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
-            $('#sourceMP4').attr("src", v[1][1][0]);
-            $('#sourceWEBM').attr("src", v[1][1][1]);
+            $('#sourceMP4').attr("src", v[1][0][0]);
+            $('#sourceWEBM').attr("src", v[1][0][1]);
 
             video.load();
             resetBouton();
@@ -535,8 +625,8 @@ function updatePet(){
             // video.setAttribute("poster", "images/posterCheval.jpg");
             // $('#bgvid').css({"background":"url('images/posterCheval.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
-            $('#sourceMP4').attr("src", v[2][1][0]);
-            $('#sourceWEBM').attr("src", v[2][1][1]);
+            $('#sourceMP4').attr("src", v[2][0][0]);
+            $('#sourceWEBM').attr("src", v[2][0][1]);
 
             video.load();
             resetBouton();
@@ -546,8 +636,8 @@ function updatePet(){
             // video.setAttribute("poster", "images/posterLapin.jpg");
             // $('#bgvid').css({"background":"url('images/posterLapin.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
-            $('#sourceMP4').attr("src", v[3][1][0]);
-            $('#sourceWEBM').attr("src", v[3][1][1]);
+            $('#sourceMP4').attr("src", v[3][0][0]);
+            $('#sourceWEBM').attr("src", v[3][0][1]);
 
             video.load();
             resetBouton();

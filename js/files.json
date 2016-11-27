@@ -1,6 +1,5 @@
-
 {
-  "files": [  {
+  "files": [{
     "source": "images/menuChat01.png",
     "type": "IMAGE",
     "size": 338312
@@ -157,4 +156,5 @@
     "type": "IMAGE",
     "size": 169000
   }]
+
 }
