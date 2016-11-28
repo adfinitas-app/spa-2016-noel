@@ -7,14 +7,6 @@
     "type": "VIDEO",
     "sources": {
       "webm": {
-        "source": "videos/CHIEN_HD_00.webm",
-        "size": 2389813
-      }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
         "source": "videos/CHIEN_HD_01.webm",
         "size": 675148
       }
@@ -31,24 +23,8 @@
     "type": "VIDEO",
     "sources": {
       "webm": {
-        "source": "videos/CHAT_HD_Dsk_00.webm",
-        "size": 377338
-      }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
         "source": "videos/CHAT_HD_Dsk_01.webm",
         "size": 235523
-      }
-    }
-  }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/CHEVAL_HD_Dsk_00.webm",
-        "size": 762540
       }
     }
   }, {
@@ -60,14 +36,6 @@
       }
     }
   }, {
-    "type": "VIDEO",
-    "sources": {
-      "webm": {
-        "source": "videos/LAPIN_HD_Dsk_00.webm",
-        "size": 1353194
-      }
-    }
-  },  {
     "type": "VIDEO",
     "sources": {
       "webm": {
