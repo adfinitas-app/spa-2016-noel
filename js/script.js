@@ -12,79 +12,79 @@ v[3] = new Array();
 
 //Video Chat
 v[0][0] = [
-        "videos/CHAT_HD_Dsk_00.mp4",
-        "videos/CHAT_HD_Dsk_00.webm"
-        ];
+"videos/CHAT_HD_Dsk_00.mp4",
+"videos/CHAT_HD_Dsk_00.webm"
+];
 v[0][1] = [
-        "videos/CHAT_HD_Dsk_01.mp4",
-        "videos/CHAT_HD_Dsk_01.webm"
-        ];
+"videos/CHAT_HD_Dsk_01.mp4",
+"videos/CHAT_HD_Dsk_01.webm"
+];
 v[0][2] = [
-        "videos/CHAT_HD_Dsk_02.mp4",
-        "videos/CHAT_HD_Dsk_02.webm"
-        ];
+"videos/CHAT_HD_Dsk_02.mp4",
+"videos/CHAT_HD_Dsk_02.webm"
+];
 v[0][3] = [
-        "videos/CHAT_HD_Dsk_03.mp4",
-        "videos/CHAT_HD_Dsk_03.webm"
-        ];
+"videos/CHAT_HD_Dsk_03.mp4",
+"videos/CHAT_HD_Dsk_03.webm"
+];
 //Video Chien
 v[1][0] = [
-        "videos/CHIEN_HD_00.mp4",
-        "videos/CHIEN_HD_00.webm"
-        ];
+"videos/CHIEN_HD_00.mp4",
+"videos/CHIEN_HD_00.webm"
+];
 v[1][1] = [
         // "videos/CHIEN_HD_01.mp4",
         "videos/CHIEN_HD_01_01.mp4",
         "videos/CHIEN_HD_01.webm"
         ];
-v[1][2] = [
+        v[1][2] = [
         "videos/CHIEN_HD_02.mp4",
         "videos/CHIEN_HD_02.webm",
         "videos/CHIEN_HD_02_b.mp4",
         "videos/CHIEN_HD_02_b.webm"
         ];
-v[1][3] = [
+        v[1][3] = [
         "videos/CHIEN_HD_03.mp4",
         "videos/CHIEN_HD_03.webm"
         ];
 //Video Cheval
 v[2][0] = [
-        "videos/CHEVAL_HD_Dsk_00.mp4",
-        "videos/CHEVAL_HD_Dsk_00.webm"
-        ];
+"videos/CHEVAL_HD_Dsk_00.mp4",
+"videos/CHEVAL_HD_Dsk_00.webm"
+];
 v[2][1] = [
-        "videos/CHEVAL_HD_Dsk_01.mp4",
-        "videos/CHEVAL_HD_Dsk_01.webm"
-        ];
+"videos/CHEVAL_HD_Dsk_01.mp4",
+"videos/CHEVAL_HD_Dsk_01.webm"
+];
 v[2][2] = [
-        "videos/CHEVAL_HD_Dsk_02.mp4",
-        "videos/CHEVAL_HD_Dsk_02.webm"
-        ];
+"videos/CHEVAL_HD_Dsk_02.mp4",
+"videos/CHEVAL_HD_Dsk_02.webm"
+];
 v[2][3] = [
-        "videos/CHEVAL_HD_Dsk_03.mp4",
-        "videos/CHEVAL_HD_Dsk_03.webm"
-        ];
+"videos/CHEVAL_HD_Dsk_03.mp4",
+"videos/CHEVAL_HD_Dsk_03.webm"
+];
 //Video Lapin
 v[3][0] = [
-        "videos/LAPIN_HD_Dsk_00.mp4",
-        "videos/LAPIN_HD_Dsk_00.webm"
-        ];
+"videos/LAPIN_HD_Dsk_00.mp4",
+"videos/LAPIN_HD_Dsk_00.webm"
+];
 v[3][1] = [
-        "videos/LAPIN_HD_Dsk_01.mp4",
-        "videos/LAPIN_HD_Dsk_01.webm"
-        ];
+"videos/LAPIN_HD_Dsk_01.mp4",
+"videos/LAPIN_HD_Dsk_01.webm"
+];
 v[3][2] = [
-        "videos/LAPIN_HD_Dsk_02.mp4",
-        "videos/LAPIN_HD_Dsk_02.webm"
-        ];
+"videos/LAPIN_HD_Dsk_02.mp4",
+"videos/LAPIN_HD_Dsk_02.webm"
+];
 v[3][3] = [
-        "videos/LAPIN_HD_Dsk_03.mp4",
-        "videos/LAPIN_HD_Dsk_03.webm"
-        ];
+"videos/LAPIN_HD_Dsk_03.mp4",
+"videos/LAPIN_HD_Dsk_03.webm"
+];
 
-        v[3][4] = [
-        "videos/Loop.mp4"
-        ];
+v[3][4] = [
+"videos/Loop.mp4"
+];
 
 
 var currentPet = "chat";
@@ -92,21 +92,21 @@ var currentPet = "chat";
 window.addEventListener("resize", updateSize, true);
 
 $( document ).ready(function() {
-     if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
+   if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
             // alert('redirectMobile');
             redirectMobile();
-     }
+        }
 
-    updateSize();
-    video = document.getElementById('bgvid');
-    videoQuery = $('#bgvid');
-    var filejson = '';
-    if (Modernizr.video.webm) {
-       filejson = 'js/files.json'
-    } else {
-       filejson = 'js/files-mp4.json'
-    };
-    $.html5Loader({
+        updateSize();
+        video = document.getElementById('bgvid');
+        videoQuery = $('#bgvid');
+        var filejson = '';
+        if (Modernizr.video.webm) {
+         filejson = 'js/files.json'
+     } else {
+         filejson = 'js/files-mp4.json'
+     };
+     $.html5Loader({
         filesToLoad:    filejson, // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
 
@@ -133,7 +133,7 @@ $( document ).ready(function() {
             $('#contTitreLoader').css({width:widthNew});
         }
     });
-});
+ });
 
 
 // Confettis
@@ -158,13 +158,13 @@ function animationConfettis(){
     $('#contFettis').html("");
     var a = 0.1;
     // for(var i=0;i<numberConf;i++){
-    var o = 0;
-    timing = setInterval(function(){
-        var widthScreen = window.innerWidth;
-        var heightScreen = window.innerHeight;
-        var widthC = range(2,20);
-        var leftC = range(0,widthScreen);
-        var topC = range(0,100);
+        var o = 0;
+        timing = setInterval(function(){
+            var widthScreen = window.innerWidth;
+            var heightScreen = window.innerHeight;
+            var widthC = range(2,20);
+            var leftC = range(0,widthScreen);
+            var topC = range(0,100);
         // var leftC = range(0,100);
         // var topC = range(0,100);
 
@@ -214,15 +214,15 @@ function animationConfettis(){
         }
     },1);
 
-    timeout = setTimeout(function(){
-        $('.chuteConf').animate({opacity:0},500,function(){
-            clearInterval(timing);
-            setTimeout(function(){
-                $('#contFettis').html("");
-                clearTimeout(timeout);
-            },50);
-        });
-    },8000);
+        timeout = setTimeout(function(){
+            $('.chuteConf').animate({opacity:0},500,function(){
+                clearInterval(timing);
+                setTimeout(function(){
+                    $('#contFettis').html("");
+                    clearTimeout(timeout);
+                },50);
+            });
+        },8000);
 
 
     // var time = Date.now();
@@ -250,71 +250,71 @@ function animationConfettis(){
 function animationConfettis2(){
     $('#contFettis').html("");
     // // for(var i=0;i<numberConf;i++){
-    var o = 0;
-    timing = setInterval(function(){
-        var widthScreen = window.innerWidth;
-        var heightScreen = window.innerHeight;
-        var widthC = range(2,20);
-        var leftC = range(0,widthScreen);
-        var topC = range(0,100);
+        var o = 0;
+        timing = setInterval(function(){
+            var widthScreen = window.innerWidth;
+            var heightScreen = window.innerHeight;
+            var widthC = range(2,20);
+            var leftC = range(0,widthScreen);
+            var topC = range(0,100);
 
-        var centreT = ~~range(0,50);
-        var centreL = ~~range(0,50);
-        var animRot = ANIMROT[~~range(0, 12)];
+            var centreT = ~~range(0,50);
+            var centreL = ~~range(0,50);
+            var animRot = ANIMROT[~~range(0, 12)];
 
-        var color = COLORS[~~range(0, 3)];
+            var color = COLORS[~~range(0, 3)];
 
-        $('#contFettis').append('<div class="chuteConf"><div class="confettis '+animRot+'" style="width:'+widthC+'px;height:'+widthC+'px; left:'+leftC+'px; top:'+topC+'px; background-color:rgb('+color[0]+','+color[1]+','+color[2]+'); transform-origin:'+centreT+'% '+centreL+'%;-webkit-transform-origin:'+centreT+'% '+centreL+'%;"></div></div>');
-        o = o+1;
+            $('#contFettis').append('<div class="chuteConf"><div class="confettis '+animRot+'" style="width:'+widthC+'px;height:'+widthC+'px; left:'+leftC+'px; top:'+topC+'px; background-color:rgb('+color[0]+','+color[1]+','+color[2]+'); transform-origin:'+centreT+'% '+centreL+'%;-webkit-transform-origin:'+centreT+'% '+centreL+'%;"></div></div>');
+            o = o+1;
         // console.log(o);
         if(o>(numberConf/3)){
             clearInterval(timing);
         }
     },1);
 
-    timeout = setTimeout(function(){
-        $('.chuteConf').animate({opacity:0},500,function(){
-            clearInterval(timing);
-            setTimeout(function(){
-                $('#contFettis').html("");
-                clearTimeout(timeout);
-            },50);
-        });
-    },5000);
-}
+        timeout = setTimeout(function(){
+            $('.chuteConf').animate({opacity:0},500,function(){
+                clearInterval(timing);
+                setTimeout(function(){
+                    $('#contFettis').html("");
+                    clearTimeout(timeout);
+                },50);
+            });
+        },5000);
+    }
 
 
 
-function setClickMenu(){
-    $('.listMenu').on('click',function(){
-        if($(this).is('#menuLapin')){
-            currentPet = "lapin";
-            setSelectionLancement(currentPet);
-        }
+    function setClickMenu(){
+        $('.listMenu').on('click',function(){
+            if($(this).is('#menuLapin')){
+                currentPet = "lapin";
+                setSelectionLancement(currentPet);
+            }
 
-        if($(this).is('#menuChien')){
-            currentPet = "chien";
-            setSelectionLancement(currentPet);
-        }
+            if($(this).is('#menuChien')){
+                currentPet = "chien";
+                setSelectionLancement(currentPet);
+            }
 
-        if($(this).is('#menuChat')){
-            currentPet = "chat";
-            setSelectionLancement(currentPet);
-        }
+            if($(this).is('#menuChat')){
+                currentPet = "chat";
+                setSelectionLancement(currentPet);
+            }
 
-        if($(this).is('#menuCheval')){
-            currentPet = "cheval";
-            setSelectionLancement(currentPet);
-        }
+            if($(this).is('#menuCheval')){
+                currentPet = "cheval";
+                setSelectionLancement(currentPet);
+            }
 
-        $('#adFlabel-don-1').html(prix01);
-        $('#adFlabel-don-2').html(prix02);
-        $('#adFlabel-don-3').html(prix03);
+            $('#adFlabel-don-1').html(prix01);
+            $('#adFlabel-don-2').html(prix02);
+            $('#adFlabel-don-3').html(prix03);
         // console.log('currentPet : '+currentPet);
 
     });
 
-    $('#clickTest').on('click',function(){
+        $('#clickTest').on('click',function(){
         // $('#sourceMP4').attr("src", v[3][1][0]);
         $('#sourceMP4').attr("src", v[3][4]);
         // $('#sourceWEBM').attr("src", v[3][1][1]);
@@ -322,9 +322,9 @@ function setClickMenu(){
         video.load();
     });
 
-}
+    }
 
-function setSelectionLancement(current){
+    function setSelectionLancement(current){
     // console.log('currentPet : '+current);
     updatePet();
     if(current == "cheval"){
@@ -352,19 +352,19 @@ function setSelectionLancement(current){
 
 $('.itemList').on('click',function(){
     if($(this).is('#listCheval')){
-    currentPet = "cheval";
+        currentPet = "cheval";
     }
 
     if($(this).is('#listLapin')){
-    currentPet = "lapin";
+        currentPet = "lapin";
     }
 
     if($(this).is('#listChat')){
-    currentPet = "chat";
+        currentPet = "chat";
     }
 
     if($(this).is('#listChien')){
-    currentPet = "chien";
+        currentPet = "chien";
     }
 
     $('.itemList').removeClass('current');
@@ -579,9 +579,9 @@ function redirectCTA(){
 }
 
 function redirectMobile(){
-        var newParamUrlMobile = "?email="+paramEmail+"&firstname="+paramFirstname+"&lastname="+paramLastname+"&reserved_code_media="+reserved_code_media;
+    var newParamUrlMobile = "?email="+paramEmail+"&firstname="+paramFirstname+"&lastname="+paramLastname+"&reserved_code_media="+reserved_code_media;
 
-        window.open('./m/'+newParamUrlMobile, '_self');
+    window.open('./m/'+newParamUrlMobile, '_self');
 }
 
 function noLoopChien(){
@@ -598,7 +598,8 @@ function noLoopChien(){
 function updatePet(){
     switch(currentPet) {
         case "chat":
-            $('#titreListe span').html('Liste de Noël d\'Atlas');
+        $('#titreListe span').html('');
+        $('#ImgListe').attr('src','images/ListeAtlas.png');
             // video.setAttribute("poster", "images/posterChat.jpg");
             // $('#bgvid').css({"background":"url('images/posterChat.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -608,9 +609,10 @@ function updatePet(){
             $('#sourceWEBM').attr("src", v[0][1][1]);
             video.load();
             resetBouton();
-        break;
-        case "chien":
+            break;
+            case "chien":
             $('#titreListe span').html('Liste de Noël de Happy');
+            $('#ImgListe').attr('src','images/ListeMilou.png');
             // video.setAttribute("poster", "images/posterChien.jpg");
             // $('#bgvid').css({"background":"url('images/posterChien.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -621,8 +623,9 @@ function updatePet(){
             video.load();
             resetBouton();
             break;
-        case "cheval":
-            $('#titreListe span').html('Liste de Noël de Willow');
+            case "cheval":
+            $('#titreListe span').html('');
+            $('#ImgListe').attr('src','images/ListeWillow.png');
             // video.setAttribute("poster", "images/posterCheval.jpg");
             // $('#bgvid').css({"background":"url('images/posterCheval.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -633,8 +636,9 @@ function updatePet(){
             video.load();
             resetBouton();
             break;
-        case "lapin":
-            $('#titreListe span').html('Liste de Noël de Chouchou');
+            case "lapin":
+            $('#titreListe span').html('');
+            $('#ImgListe').attr('src','images/ListeChouchou.png')
             // video.setAttribute("poster", "images/posterLapin.jpg");
             // $('#bgvid').css({"background":"url('images/posterLapin.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
@@ -645,7 +649,7 @@ function updatePet(){
             video.load();
             resetBouton();
             break;
-    }
+        }
 
     //document.getElementById('bgvid').addEventListener('ended',firstNoLoop);
 
@@ -730,7 +734,7 @@ function updateSize(){
     }else{
         $('video').css({'width':'101%','height':'auto'});
 
-            $('#contentMenu li').css({'background-position': '50% 25%'});
-            $('#menuList li').css({'background-position': '50% 25%'});
+        $('#contentMenu li').css({'background-position': '50% 25%'});
+        $('#menuList li').css({'background-position': '50% 25%'});
     }
 }
