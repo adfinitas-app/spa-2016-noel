@@ -92,7 +92,7 @@ var currentPet = "chat";
 window.addEventListener("resize", updateSize, true);
 
 $( document ).ready(function() {
-   if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
+ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
             // alert('redirectMobile');
             redirectMobile();
         }
@@ -102,11 +102,11 @@ $( document ).ready(function() {
         videoQuery = $('#bgvid');
         var filejson = '';
         if (Modernizr.video.webm) {
-         filejson = 'js/files.json'
-     } else {
-         filejson = 'js/files-mp4.json'
-     };
-     $.html5Loader({
+           filejson = 'js/files.json'
+       } else {
+           filejson = 'js/files-mp4.json'
+       };
+       $.html5Loader({
         filesToLoad:    filejson, // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
 
@@ -133,7 +133,7 @@ $( document ).ready(function() {
             $('#contTitreLoader').css({width:widthNew});
         }
     });
- });
+   });
 
 
 // Confettis
@@ -402,31 +402,38 @@ $('.itemBTN').on('click',function(){
 
         $('#etape01').animate({opacity:1},800);
         $('#etape02').animate({opacity:0},800);
-        $('#etape03').animate({opacity:0},800);
 
         clearInterval(timing);
         clearTimeout(timeout);
         $('#contFettis').html("");
 
         if(currentPet == "chat"){
+            $('#etape03').attr('src', 'images/etape03Atlas.png');
+            $('#etape03').animate({opacity:0},800);
             $('#sourceMP4').attr("src", v[0][1][0]);
             $('#sourceWEBM').attr("src", v[0][1][1]);
             video.load();
         }
 
         if(currentPet == "chien"){
+            $('#etape03').attr('src', 'images/etape03.png');
+            $('#etape03').animate({opacity:0},800);
             $('#sourceMP4').attr("src", v[1][1][0]);
             // $('#sourceWEBM').attr("src", v[1][1][1]);
             video.load();
         }
 
         if(currentPet == "cheval"){
+            $('#etape03').attr('src', 'images/etape03Willow.png');
+            $('#etape03').animate({opacity:0},800);
             $('#sourceMP4').attr("src", v[2][1][0]);
             $('#sourceWEBM').attr("src", v[2][1][1]);
             video.load();
         }
 
         if(currentPet == "lapin"){
+            $('#etape03').attr('src', 'images/etape03Chouchou.png');
+            $('#etape03').animate({opacity:0},800);
             $('#sourceMP4').attr("src", v[3][1][0]);
             $('#sourceWEBM').attr("src", v[3][1][1]);
             video.load();
@@ -441,7 +448,6 @@ $('.itemBTN').on('click',function(){
 
         $('#etape01').animate({opacity:1},800);
         $('#etape02').animate({opacity:1},800);
-        $('#etape03').animate({opacity:0},800);
 
         clearInterval(timing);
         clearTimeout(timeout);
@@ -449,13 +455,17 @@ $('.itemBTN').on('click',function(){
 
 
         if(currentPet == "chat"){
+            $('#etape03').attr('src', 'images/etape03Atlas.png');
+            $('#etape03').animate({opacity:0},800);
             $('#sourceMP4').attr("src", v[0][2][0]);
             $('#sourceWEBM').attr("src", v[0][2][1]);
             video.load();
         }
 
         if(currentPet == "chien"){
-            // video.removeAttribute("loop");
+            $('#etape03').attr('src', 'images/etape03.png');
+            $('#etape03').animate({opacity:0},800);
+                        // video.removeAttribute("loop");
             // document.getElementById('bgvid').addEventListener('ended',noLoopChien);
             $('#sourceMP4').attr("src", v[1][2][0]);
             $('#sourceWEBM').attr("src", v[1][2][1]);
@@ -463,12 +473,16 @@ $('.itemBTN').on('click',function(){
         }
 
         if(currentPet == "cheval"){
+            $('#etape03').attr('src', 'images/etape03Willow.png');
+            $('#etape03').animate({opacity:0},800);
             $('#sourceMP4').attr("src", v[2][2][0]);
             $('#sourceWEBM').attr("src", v[2][2][1]);
             video.load();
         }
 
         if(currentPet == "lapin"){
+            $('#etape03').attr('src', 'images/etape03Chouchou.png');
+            $('#etape03').animate({opacity:0},800);
             $('#sourceMP4').attr("src", v[3][2][0]);
             $('#sourceWEBM').attr("src", v[3][2][1]);
             video.load();
@@ -487,15 +501,18 @@ $('.itemBTN').on('click',function(){
 
         $('#etape01').animate({opacity:1},800);
         $('#etape02').animate({opacity:1},800);
-        $('#etape03').animate({opacity:1},800);
 
         if(currentPet == "chat"){
+            $('#etape03').attr('src', 'images/etape03Atlas.png');
+            $('#etape03').animate({opacity:1},800);
             $('#sourceMP4').attr("src", v[0][3][0]);
             $('#sourceWEBM').attr("src", v[0][3][1]);
             video.load();
         }
 
         if(currentPet == "chien"){
+            $('#etape03').attr('src', 'images/etape03.png');
+            $('#etape03').animate({opacity:1},800);
             video.removeAttribute("loop");
             $('#sourceMP4').attr("src", v[1][3][0]);
             $('#sourceWEBM').attr("src", v[1][3][1]);
@@ -503,12 +520,16 @@ $('.itemBTN').on('click',function(){
         }
 
         if(currentPet == "cheval"){
+            $('#etape03').attr('src', 'images/etape03Willow.png');
+            $('#etape03').animate({opacity:1},800);
             $('#sourceMP4').attr("src", v[2][3][0]);
             $('#sourceWEBM').attr("src", v[2][3][1]);
             video.load();
         }
 
         if(currentPet == "lapin"){
+            $('#etape03').attr('src', 'images/etape03Chouchou.png');
+            $('#etape03').animate({opacity:1},800);
             $('#sourceMP4').attr("src", v[3][3][0]);
             $('#sourceWEBM').attr("src", v[3][3][1]);
             video.load();
