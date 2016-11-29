@@ -1,2 +1,4 @@
 gulp*
 node*
+.git*
+.DS*
