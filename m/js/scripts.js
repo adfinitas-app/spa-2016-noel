@@ -45,22 +45,22 @@ var timing, timeout;
 function animationConfettis1(){
     $('#contFettis').html("");
     // // for(var i=0;i<numberConf;i++){
-    var o = 0;
-    timing = setInterval(function(){
-        var widthScreen = window.innerWidth;
-        var heightScreen = window.innerHeight;
-        var widthC = range(2,20);
-        var leftC = range(0,widthScreen);
-        var topC = range(0,100);
+        var o = 0;
+        timing = setInterval(function(){
+            var widthScreen = window.innerWidth;
+            var heightScreen = window.innerHeight;
+            var widthC = range(2,20);
+            var leftC = range(0,widthScreen);
+            var topC = range(0,100);
 
-        var centreT = ~~range(0,50);
-        var centreL = ~~range(0,50);
-        var animRot = ANIMROT[~~range(0, 12)];
+            var centreT = ~~range(0,50);
+            var centreL = ~~range(0,50);
+            var animRot = ANIMROT[~~range(0, 12)];
 
-        var color = COLORS[~~range(0, 3)];
+            var color = COLORS[~~range(0, 3)];
 
-        $('#contFettis').append('<div class="chuteConf"><div class="confettis '+animRot+'" style="width:'+widthC+'px;height:'+widthC+'px; left:'+leftC+'px; top:'+topC+'px; background-color:rgb('+color[0]+','+color[1]+','+color[2]+'); transform-origin:'+centreT+'% '+centreL+'%;-webkit-transform-origin:'+centreT+'% '+centreL+'%;"></div></div>');
-        o = o+1;
+            $('#contFettis').append('<div class="chuteConf"><div class="confettis '+animRot+'" style="width:'+widthC+'px;height:'+widthC+'px; left:'+leftC+'px; top:'+topC+'px; background-color:rgb('+color[0]+','+color[1]+','+color[2]+'); transform-origin:'+centreT+'% '+centreL+'%;-webkit-transform-origin:'+centreT+'% '+centreL+'%;"></div></div>');
+            o = o+1;
         // console.log(o);
         if(o>(numberConf1)){
             clearInterval(timing);
@@ -68,36 +68,36 @@ function animationConfettis1(){
     },100);
 
 
-    timeout = setTimeout(function(){
-        $('.chuteConf').animate({opacity:0},500,function(){
-            clearInterval(timing);
-            setTimeout(function(){
-                $('#contFettis').html("");
-                clearTimeout(timeout);
-            },50);
-        });
-    },5000);
-}
+        timeout = setTimeout(function(){
+            $('.chuteConf').animate({opacity:0},500,function(){
+                clearInterval(timing);
+                setTimeout(function(){
+                    $('#contFettis').html("");
+                    clearTimeout(timeout);
+                },50);
+            });
+        },5000);
+    }
 
-function animationConfettis2(){
-    $('#contFettis').html("");
+    function animationConfettis2(){
+        $('#contFettis').html("");
     // // for(var i=0;i<numberConf;i++){
-    var o = 0;
-    timing = setInterval(function(){
-        var widthScreen = window.innerWidth;
-        var heightScreen = window.innerHeight;
-        var widthC = range(2,20);
-        var leftC = range(0,widthScreen);
-        var topC = range(0,100);
+        var o = 0;
+        timing = setInterval(function(){
+            var widthScreen = window.innerWidth;
+            var heightScreen = window.innerHeight;
+            var widthC = range(2,20);
+            var leftC = range(0,widthScreen);
+            var topC = range(0,100);
 
-        var centreT = ~~range(0,50);
-        var centreL = ~~range(0,50);
-        var animRot = ANIMROT[~~range(0, 12)];
+            var centreT = ~~range(0,50);
+            var centreL = ~~range(0,50);
+            var animRot = ANIMROT[~~range(0, 12)];
 
-        var color = COLORS[~~range(0, 3)];
+            var color = COLORS[~~range(0, 3)];
 
-        $('#contFettis').append('<div class="chuteConf"><div class="confettis '+animRot+'" style="width:'+widthC+'px;height:'+widthC+'px; left:'+leftC+'px; top:'+topC+'px; background-color:rgb('+color[0]+','+color[1]+','+color[2]+'); transform-origin:'+centreT+'% '+centreL+'%;-webkit-transform-origin:'+centreT+'% '+centreL+'%;"></div></div>');
-        o = o+1;
+            $('#contFettis').append('<div class="chuteConf"><div class="confettis '+animRot+'" style="width:'+widthC+'px;height:'+widthC+'px; left:'+leftC+'px; top:'+topC+'px; background-color:rgb('+color[0]+','+color[1]+','+color[2]+'); transform-origin:'+centreT+'% '+centreL+'%;-webkit-transform-origin:'+centreT+'% '+centreL+'%;"></div></div>');
+            o = o+1;
         // console.log(o);
         if(o>(numberConf2)){
             clearInterval(timing);
@@ -105,78 +105,78 @@ function animationConfettis2(){
     },100);
 
 
-    timeout = setTimeout(function(){
-        $('.chuteConf').animate({opacity:0},500,function(){
-            clearInterval(timing);
-            setTimeout(function(){
-                $('#contFettis').html("");
-                clearTimeout(timeout);
-            },50);
-        });
-    },5000);
-}
+        timeout = setTimeout(function(){
+            $('.chuteConf').animate({opacity:0},500,function(){
+                clearInterval(timing);
+                setTimeout(function(){
+                    $('#contFettis').html("");
+                    clearTimeout(timeout);
+                },50);
+            });
+        },5000);
+    }
 
 
 
-window.onorientationchange = function() {
-  orientationchange();
-};
+    window.onorientationchange = function() {
+      orientationchange();
+  };
 
-function orientationchange() {
+  function orientationchange() {
     var orientation = "unknown";
     switch (window.orientation) {
         case 0:
-            orientation = "portrait";
-            $("#main").css({display:"block"});
-            $("#paysage").css({display:"none"});
+        orientation = "portrait";
+        $("#main").css({display:"block"});
+        $("#paysage").css({display:"none"});
             // animation();
             break;
-        case 90:
+            case 90:
             orientation = "landscape counter clockwise";
             $("#main").css({display:"none"});
             $("#paysage").css({display:"block"});
             // animation_paysage();
             break;
-        case -90:
+            case -90:
             orientation = "landscape clockwise";
             $("#main").css({display:"none"});
             $("#paysage").css({display:"block"});
             // animation_paysage();
             break;
-        case 180:
+            case 180:
             orientation = "upside down";
             $("#main").css({display:"block"});
             $("#paysage").css({display:"none"});
             // animation();
             break;
-    }
-};
+        }
+    };
 
 
-var w_height = $(window).height();
+    var w_height = $(window).height();
 
-$(document).ready(function(){
-  var _originalSize = $(window).width() + $(window).height()
-  $(window).resize(function(){
-    if($(window).width() + $(window).height() != _originalSize){
-      console.log("keyboard show up");
-      $('#animaux').css({'height':w_height+'px', top:'-52%'});
+    $(document).ready(function(){
+      var _originalSize = $(window).width() + $(window).height()
+      $(window).resize(function(){
+        if($(window).width() + $(window).height() != _originalSize){
+          console.log("keyboard show up");
+          $('#animaux').css({'height':w_height+'px', top:'-52%'});
       // $('#animaux').css({top:'-50%'});
-    }else{
+  }else{
       console.log("keyboard closed");
       $('#animaux').css({'height':'100%', top:'0%'}, 'slow');
       // $('#animaux').css({top:'0%'});
-    }
-  });
+  }
 });
+  });
 
 
 // ANIMATION PRE-HOME //
 setTimeout(function(){
-        $('#logo_spa_pre_home').animate({top:"2%",opacity:"1"},600, "linear");
+    $('#logo_spa_pre_home').animate({top:"2%",opacity:"1"},600, "linear");
 },100);
 setTimeout(function(){
-        $('#titre_pre_home').animate({opacity:"1"},800, "linear");
+    $('#titre_pre_home').animate({opacity:"1"},800, "linear");
 },300);
 
 // ANIMATION PRE-HOME //
@@ -266,11 +266,11 @@ section_chien = 1;
 
 $('#firstPrice').on('click',function(){
     clearInterval(timing);
-   clearTimeout(timeout);
-   clickCTA = 1;
-   montantSelected = prix01;
+    clearTimeout(timeout);
+    clickCTA = 1;
+    montantSelected = prix01;
 
-   $('#contFettis').html("");
+    $('#contFettis').html("");
     if (section_chien === 1) {
         $('#vid_1_chien').css({display:"block"});
         $('#vid_2_chien,#vid_3_chien').css({display:"none"});
@@ -290,11 +290,11 @@ $('#firstPrice').on('click',function(){
 });
 $('#secondPrice').on('click',function(){
     clearInterval(timing);
-   clearTimeout(timeout);
-   clickCTA = 1;
-   montantSelected = prix02;
+    clearTimeout(timeout);
+    clickCTA = 1;
+    montantSelected = prix02;
 
-   $('#contFettis').html("");
+    $('#contFettis').html("");
     if (section_chien === 1) {
         animationConfettis1();
         $('#vid_2_chien').css({display:"block"});
@@ -318,11 +318,11 @@ $('#secondPrice').on('click',function(){
 });
 $('#thirdPrice').on('click',function(){
     clearInterval(timing);
-   clearTimeout(timeout);
-   clickCTA = 1;
-   montantSelected = prix03;
+    clearTimeout(timeout);
+    clickCTA = 1;
+    montantSelected = prix03;
 
-   $('#contFettis').html("");
+    $('#contFettis').html("");
     if (section_chien === 1) {
         animationConfettis2();
         $('#vid_3_chien').css({display:"block"});
@@ -456,6 +456,8 @@ $('#zone_animal_1').on('click',function(){
 
         document.getElementById('liste_title').innerHTML="la liste de chouchou";
         document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de chouchou";
+        document.getElementById('liste_img').attr('src','img/ListeChouchou.png');
+        
         $("#section_gifs_lapin").css({display:"block"});
         $("#section_gifs_chien,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
         $('#vid_2_lapin,#vid_3_lapin').css({display:"none"});
@@ -708,8 +710,8 @@ function resetBouton(){
     $('#montant').val('');
     $('#cta').removeClass('activateCTA');
     clearInterval(timing);
-   clearTimeout(timeout);
-   $('#contFettis').html("");
+    clearTimeout(timeout);
+    $('#contFettis').html("");
 }
 
 
@@ -741,5 +743,5 @@ $(function() {
     $('#vid_1_cheval,#vid_2_cheval,#vid_3_cheval').addClass("cheval_ipad");
 
     document.getElementById('texte_rotate').innerHTML="VEUILLEZ TOURNER<br>vOTRE tablette<br>POUR une meilleure<br>exp&eacute;rience...";
-  }
+}
 });
