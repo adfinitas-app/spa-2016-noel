@@ -92,7 +92,7 @@ var currentPet = "chat";
 window.addEventListener("resize", updateSize, true);
 
 $( document ).ready(function() {
-   if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
+ if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
             // alert('redirectMobile');
             redirectMobile();
         }
@@ -102,11 +102,11 @@ $( document ).ready(function() {
         videoQuery = $('#bgvid');
         var filejson = '';
         if (Modernizr.video.webm) {
-         filejson = 'js/files.json'
-     } else {
-         filejson = 'js/files-mp4.json'
-     };
-     $.html5Loader({
+           filejson = 'js/files.json'
+       } else {
+           filejson = 'js/files-mp4.json'
+       };
+       $.html5Loader({
         filesToLoad:    filejson, // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
 
@@ -133,7 +133,7 @@ $( document ).ready(function() {
             $('#contTitreLoader').css({width:widthNew});
         }
     });
- });
+   });
 
 
 // Confettis
@@ -633,7 +633,7 @@ function updatePet(){
             break;
             case "chien":
             $('#titreListe span').html('Liste de Noël de Happy');
-            $('#ImgListe').attr('src','images/ListeMilou.png');
+            $('#ImgListe').attr('src','images/listeMilou.png');
             // video.setAttribute("poster", "images/posterChien.jpg");
             // $('#bgvid').css({"background":"url('images/posterChien.jpg')"});
             // $('#bgvid').css({"background-size":"cover"});
