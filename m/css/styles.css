@@ -844,7 +844,7 @@ div.spacer { height: 1px; }
 
 #btn_facebook{
     position:absolute;
-    bottom: 12%;
+    bottom: 10%;
     left:0;
     width:15vw;
     height:15vw;
@@ -1438,15 +1438,15 @@ div.spacer { height: 1px; }
 
     z-index:-1;
 
-    
+
 
     opacity:1;
 
-    
+
 
     border-radius:0 0;
 
-    
+
 
     transform:scale(1);
 
