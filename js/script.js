@@ -92,7 +92,7 @@ var currentPet = "chat";
 window.addEventListener("resize", updateSize, true);
 
 $( document ).ready(function() {
- if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
+   if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){
             // alert('redirectMobile');
             redirectMobile();
         }
@@ -102,11 +102,11 @@ $( document ).ready(function() {
         videoQuery = $('#bgvid');
         var filejson = '';
         if (Modernizr.video.webm) {
-           filejson = 'js/files.json'
-       } else {
-           filejson = 'js/files-mp4.json'
-       };
-       $.html5Loader({
+         filejson = 'js/files.json'
+     } else {
+         filejson = 'js/files-mp4.json'
+     };
+     $.html5Loader({
         filesToLoad:    filejson, // this could be a JSON or simply a javascript object
         onBeforeLoad:       function () {
 
@@ -133,7 +133,7 @@ $( document ).ready(function() {
             $('#contTitreLoader').css({width:widthNew});
         }
     });
-   });
+ });
 
 
 // Confettis
@@ -622,8 +622,8 @@ function updatePet(){
         $('#titreListe span').html('');
         $('#ImgListe').attr('src','images/ListeAtlas.png');
             // video.setAttribute("poster", "images/posterChat.jpg");
-            // $('#bgvid').css({"background":"url('images/posterChat.jpg')"});
-            // $('#bgvid').css({"background-size":"cover"});
+            $('#bgvid').css({"background":"url('images/posterChat.jpg')"});
+            $('#bgvid').css({"background-size":"cover"});
             //$('#sourceMP4').attr("src", v[0][0][0]);
             //$('#sourceWEBM').attr("src", v[0][0][1]);
             $('#sourceMP4').attr("src", v[0][1][0]);
@@ -635,8 +635,8 @@ function updatePet(){
             $('#titreListe span').html('Liste de Noël de Happy');
             $('#ImgListe').attr('src','images/ListeMilou.png');
             // video.setAttribute("poster", "images/posterChien.jpg");
-            // $('#bgvid').css({"background":"url('images/posterChien.jpg')"});
-            // $('#bgvid').css({"background-size":"cover"});
+            $('#bgvid').css({"background":"url('images/posterChien.jpg')"});
+            $('#bgvid').css({"background-size":"cover"});
             //$('#sourceMP4').attr("src", v[1][0][0]);
             //$('#sourceWEBM').attr("src", v[1][0][1]);
             $('#sourceMP4').attr("src", v[1][1][0]);
@@ -648,8 +648,8 @@ function updatePet(){
             $('#titreListe span').html('');
             $('#ImgListe').attr('src','images/ListeWillow.png');
             // video.setAttribute("poster", "images/posterCheval.jpg");
-            // $('#bgvid').css({"background":"url('images/posterCheval.jpg')"});
-            // $('#bgvid').css({"background-size":"cover"});
+            $('#bgvid').css({"background":"url('images/posterCheval.jpg')"});
+            $('#bgvid').css({"background-size":"cover"});
             //$('#sourceMP4').attr("src", v[2][0][0]);
             //$('#sourceWEBM').attr("src", v[2][0][1]);
             $('#sourceMP4').attr("src", v[2][1][0]);
@@ -661,8 +661,8 @@ function updatePet(){
             $('#titreListe span').html('');
             $('#ImgListe').attr('src','images/ListeChouchou.png')
             // video.setAttribute("poster", "images/posterLapin.jpg");
-            // $('#bgvid').css({"background":"url('images/posterLapin.jpg')"});
-            // $('#bgvid').css({"background-size":"cover"});
+            $('#bgvid').css({"background":"url('images/posterLapin.jpg')"});
+            $('#bgvid').css({"background-size":"cover"});
             //$('#sourceMP4').attr("src", v[3][0][0]);
             //$('#sourceWEBM').attr("src", v[3][0][1]);
             $('#sourceMP4').attr("src", v[3][1][0]);
