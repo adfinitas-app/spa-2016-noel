@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 var range;
 range = function(a, b) {
-   return (b - a) * Math.random() + a;
+ return (b - a) * Math.random() + a;
 };
 var numberConf1 = 15;
 var numberConf2 = 75;
@@ -456,7 +456,7 @@ $('#zone_animal_1').on('click',function(){
 
         document.getElementById('liste_title').innerHTML="la liste de chouchou";
         document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de chouchou";
-        document.getElementById('liste_img').attr('src','img/ListeChouchou.png');
+        $('#liste_img').attr('src','img/ListeChouchou.png');
         
         $("#section_gifs_lapin").css({display:"block"});
         $("#section_gifs_chien,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
