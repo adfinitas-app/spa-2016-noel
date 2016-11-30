@@ -455,7 +455,7 @@ $('#zone_animal_1').on('click',function(){
         $('#animaux').css({display:"block"});
 
         document.getElementById('liste_title').innerHTML="la liste de chouchou";
-        document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de chouchou";
+        document.getElementById('liste_title_img').innerHTML="";
         $('#liste_img').attr('src','img/ListeChouchou.png');
         
         $("#section_gifs_lapin").css({display:"block"});
@@ -522,7 +522,8 @@ $('#zone_animal_2').on('click',function(){
         $('#animaux').css({display:"block"});
 
         document.getElementById('liste_title').innerHTML="la liste de happy";
-        document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de happy";
+        document.getElementById('liste_title_img').innerHTML="";
+        $('#liste_img').attr('src','img/liste.png');
         $("#section_gifs_chien").css({display:"block"});
         $("#section_gifs_lapin,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
         $('#vid_2_chien,#vid_3_chien').css({display:"none"});
@@ -587,7 +588,8 @@ $('#zone_animal_3').on('click',function(){
         $('#animaux').css({display:"block"});
 
         document.getElementById('liste_title').innerHTML="la liste d'atlas";
-        document.getElementById('liste_title_img').innerHTML="liste de no&euml;l d'atlas";
+        document.getElementById('liste_title_img').innerHTML="";
+        $('#liste_img').attr('src','img/ListeAtlas.png');
         $("#section_gifs_chat").css({display:"block"});
         $("#section_gifs_lapin,#section_gifs_chien,#section_gifs_cheval").css({display:"none"});
         $('#vid_2_chat,#vid_3_chat').css({display:"none"});
@@ -651,7 +653,8 @@ $('#zone_animal_4').on('click',function(){
         $('#animaux').css({display:"block"});
 
         document.getElementById('liste_title').innerHTML="la liste de willow";
-        document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de willow";
+        document.getElementById('liste_title_img').innerHTML="";
+        $('#liste_img').attr('src','img/ListeWillow.png');
         $("#section_gifs_cheval").css({display:"block"});
         $("#section_gifs_lapin,#section_gifs_chien,#section_gifs_chat").css({display:"none"});
         $('#vid_2_cheval,#vid_3_cheval').css({display:"none"});
