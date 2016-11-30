@@ -488,7 +488,8 @@ $('#btn_lapin').on('click',function(){
     $('#animaux').css({display:"block"});
 
     document.getElementById('liste_title').innerHTML="la liste de chouchou";
-    document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de chouchou";
+    document.getElementById('liste_title_img').innerHTML="";
+    $('#liste_img').attr('src','img/ListeChouchou.png');
     $("#section_gifs_lapin").css({display:"block"});
     $("#section_gifs_chien,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
     $('#vid_2_lapin,#vid_3_lapin').css({display:"none"});
