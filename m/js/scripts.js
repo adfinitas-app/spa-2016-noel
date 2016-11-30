@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 var range;
 range = function(a, b) {
- return (b - a) * Math.random() + a;
+   return (b - a) * Math.random() + a;
 };
 var numberConf1 = 15;
 var numberConf2 = 75;
@@ -488,7 +488,7 @@ $('#btn_lapin').on('click',function(){
     $('#animaux').css({display:"block"});
 
     document.getElementById('liste_title').innerHTML="la liste de chouchou";
-    document.getElementById('liste_title_img').innerHTML="";
+    $('liste_title_img').innerHTML="";
     $('#liste_img').attr('src','img/ListeChouchou.png');
     $("#section_gifs_lapin").css({display:"block"});
     $("#section_gifs_chien,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
@@ -523,7 +523,7 @@ $('#zone_animal_2').on('click',function(){
         $('#animaux').css({display:"block"});
 
         document.getElementById('liste_title').innerHTML="la liste de happy";
-        document.getElementById('liste_title_img').innerHTML="";
+        document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de happy";
         $('#liste_img').attr('src','img/liste.png');
         $("#section_gifs_chien").css({display:"block"});
         $("#section_gifs_lapin,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
@@ -556,6 +556,7 @@ $('#btn_chien').on('click',function(){
 
     document.getElementById('liste_title').innerHTML="la liste de happy";
     document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de happy";
+    $('#liste_img').attr('src','img/liste.png');
     $("#section_gifs_chien").css({display:"block"});
     $("#section_gifs_lapin,#section_gifs_chat,#section_gifs_cheval").css({display:"none"});
     $('#vid_2_chien,#vid_3_chien').css({display:"none"});
@@ -621,7 +622,8 @@ $('#btn_chat').on('click',function(){
     $('#animaux').css({display:"block"});
 
     document.getElementById('liste_title').innerHTML="la liste d'atlas";
-    document.getElementById('liste_title_img').innerHTML="liste de no&euml;l d'atlas";
+    document.getElementById('liste_title_img').innerHTML="";
+    $('#liste_img').attr('src','img/ListeAtlas.png');
     $("#section_gifs_chat").css({display:"block"});
     $("#section_gifs_lapin,#section_gifs_chien,#section_gifs_cheval").css({display:"none"});
     $('#vid_2_chat,#vid_3_chat').css({display:"none"});
@@ -686,7 +688,8 @@ $('#btn_cheval').on('click',function(){
     $('#animaux').css({display:"block"});
 
     document.getElementById('liste_title').innerHTML="la liste de willow";
-    document.getElementById('liste_title_img').innerHTML="liste de no&euml;l de willow";
+    document.getElementById('liste_title_img').innerHTML="";
+    $('#liste_img').attr('src','img/ListeWillow.png');
     $("#section_gifs_cheval").css({display:"block"});
     $("#section_gifs_lapin,#section_gifs_chien,#section_gifs_chat").css({display:"none"});
     $('#vid_2_cheval,#vid_3_cheval').css({display:"none"});
