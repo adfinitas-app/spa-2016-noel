@@ -891,10 +891,10 @@ video {
 #logoFacebook{
     position: absolute;
     bottom: 0.2vw;
-    right: 2vw;
+    right: 1vw;
     height: 100%;
     color: #fff;
-    min-width: 100px;
+    min-width: 90px;
 }
 
 #logoFacebook img{
