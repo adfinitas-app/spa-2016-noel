@@ -543,7 +543,7 @@ $('.itemBTN').on('click',function(){
 
         montantSelected = null;
 
-        var newParamUrlOther = "?cid=147&once_grid[]="+(prix01*100)+"&once_grid[]="+(prix02*100)+"&once_grid[]="+(prix03*100)+"&amount=&frequency=once&firstname="+paramFirstname+"&lastname="+paramLastname+"&email="+paramEmail+"&reserved_code_media="+reserved_code_media;
+        var newParamUrlOther = "?cid=147&once_grid[]="+(prix01*100)+"&once_grid[]="+(prix02*100)+"&once_grid[]="+(prix03*100)+"&amount=&frequency=once&firstname="+paramFirstname+"&lastname="+paramLastname+"&email="+paramEmail+"&reserved_code_email="+paramCodeEmail+"&reserved_code_media="+reserved_code_media;
 
         console.log('newParamUrlOther : '+newParamUrlOther);
 
@@ -600,7 +600,7 @@ function redirectCTA(){
 }
 
 function redirectMobile(){
-    var newParamUrlMobile = "?email="+paramEmail+"&firstname="+paramFirstname+"&lastname="+paramLastname+"&reserved_code_media="+reserved_code_media;
+    var newParamUrlMobile = "?email="+paramEmail+"&firstname="+paramFirstname+"&lastname="+paramLastname+"&reserved_code_email="+paramCodeEmail+"&reserved_code_media="+reserved_code_media;
 
     window.open('./m/'+newParamUrlMobile, '_self');
 }
