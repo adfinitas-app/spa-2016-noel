@@ -591,7 +591,7 @@ $('.itemBTN').on('click',function(){
 
 function redirectCTA(){
     if($(this).hasClass('activateCTA')){
-        var newParamUrl = "?cid=147&once_grid[]="+(prix01*100)+"&once_grid[]="+(prix02*100)+"&once_grid[]="+(prix03*100)+"&amount="+(montantSelected*100)+"&frequency=once&firstname="+paramFirstname+"&lastname="+paramLastname+"&email="+paramEmail+"&reserved_code_media="+reserved_code_media;
+        var newParamUrl = "?cid=147&once_grid[]="+(prix01*100)+"&once_grid[]="+(prix02*100)+"&once_grid[]="+(prix03*100)+"&amount="+(montantSelected*100)+"&frequency=once&firstname="+paramFirstname+"&lastname="+paramLastname+"&email="+paramEmail+"&reserved_code_email="+paramCodeEmail+"&reserved_code_media="+reserved_code_media;
 
         console.log('newParamUrl : '+newParamUrl);
 
